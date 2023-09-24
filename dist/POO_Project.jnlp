@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="POO_Project.jar" size="2618" download="eager" />
+    <jar href="POO_Project.jar" size="4846" download="eager" />
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="poo_project.POO_Project"  name="POO_Project" />
   <update check="always"/>
