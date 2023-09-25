@@ -1,27 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane alignment="CENTER" gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poo_project.FXMLDocumentController">
+<GridPane alignment="CENTER" gridLinesVisible="true" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="1090.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poo_project.FXMLDocumentController">
   <columnConstraints>
-    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="750.0" />
-      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="750.0" />
+    <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="900.0" minWidth="10.0" prefWidth="900.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="400.0" minWidth="10.0" prefWidth="400.0" />
   </columnConstraints>
   <rowConstraints>
-    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="112.0" valignment="CENTER" vgrow="ALWAYS" />
-    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="540.0" valignment="CENTER" vgrow="ALWAYS" />
+    <RowConstraints fillHeight="false" maxHeight="-Infinity" minHeight="10.0" prefHeight="97.0" valignment="CENTER" vgrow="ALWAYS" />
+    <RowConstraints fillHeight="false" maxHeight="-Infinity" minHeight="10.0" prefHeight="495.0" valignment="CENTER" vgrow="ALWAYS" />
   </rowConstraints>
    <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" text="Teste 6" GridPane.columnIndex="1" />
-      <Label alignment="CENTER" contentDisplay="CENTER" text="Teste 9" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <ChoiceBox fx:id="typeChoice" maxHeight="-Infinity" prefHeight="27.0" prefWidth="318.0" GridPane.valignment="CENTER">
+      <ChoiceBox fx:id="typeChoice" maxHeight="-Infinity" prefHeight="27.0" prefWidth="318.0" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
          <GridPane.margin>
-            <Insets />
-         </GridPane.margin></ChoiceBox>
+            <Insets left="100.0" />
+             </GridPane.margin></ChoiceBox>
+      <GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="397.0" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ListView fx:id="leftListView" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="272.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="100.0" right="50.0" />
+               </GridPane.margin>
+            </ListView>
+            <ListView fx:id="rightListView" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368.0" prefWidth="272.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="50.0" right="100.0" />
+               </GridPane.margin>
+            </ListView>
+         </children>
+      </GridPane>
+      <Button fx:id="compareButton" mnemonicParsing="false" onAction="#switchToScene2" onMouseClicked="#switchToScene2" prefHeight="39.0" prefWidth="165.0" text="Comparar" GridPane.columnIndex="1" GridPane.rowIndex="1" />
    </children>
 </GridPane>

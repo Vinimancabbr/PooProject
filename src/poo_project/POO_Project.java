@@ -8,8 +8,7 @@ import javafx.stage.Stage;
 
 public class POO_Project extends Application {
     
-    @Override
-    public void start(Stage stage) throws Exception {
+    @Override public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
         
         Scene scene = new Scene(root);
