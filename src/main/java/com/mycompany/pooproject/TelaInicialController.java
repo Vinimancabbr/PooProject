@@ -38,7 +38,7 @@ public class TelaInicialController implements Initializable {
         
     }
     public void switchToScene2(ActionEvent event) throws IOException { 
-        URL url = getClass().getResource("secondary.fxml");
+        URL url = getClass().getResource("scene2.fxml");
         root = FXMLLoader.load(url);
         
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -54,7 +54,7 @@ public class TelaInicialController implements Initializable {
 /*List funcionality--*/
     @FXML private ChoiceBox<String> typeChoice;
     
-    private String[] types = {"                                                                                      ", 
+    private final String[] types = {"                                                                                      ", 
         "Microondas", 
         "Geladeira", 
         "Maquina De Lavar"};
@@ -70,17 +70,22 @@ public class TelaInicialController implements Initializable {
         String type = typeChoice.getValue();
         leftListView.getItems().clear();
         rightListView.getItems().clear();
-        if (type.equals("Microondas")){
-            leftListView.getItems().addAll(microondas);
-            rightListView.getItems().addAll(microondas);
-        } else if (type.equals("Geladeira")) {
+        switch (type) {
+            case "Microondas":
+                leftListView.getItems().addAll(microondas);
+                rightListView.getItems().addAll(microondas);
+                break;
+            case "Geladeira":
                 leftListView.getItems().addAll(geladeiras);
                 rightListView.getItems().addAll(geladeiras);
-            } else if (type.equals("Maquina De Lavar")) {
-                    leftListView.getItems().addAll(maquinasDeLavar);
-                    rightListView.getItems().addAll(maquinasDeLavar);
-                } else {  
-            }
+                break;
+            case "Maquina De Lavar":
+                leftListView.getItems().addAll(maquinasDeLavar);
+                rightListView.getItems().addAll(maquinasDeLavar);
+                break;
+            default:
+                break;
+        }
     }
 /*--List funcionality*/
     

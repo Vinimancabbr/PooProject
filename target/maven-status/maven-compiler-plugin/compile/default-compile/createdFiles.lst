@@ -1,6 +1,8 @@
+com\mycompany\pooproject\Classes\Eletrodomestico.class
 com\mycompany\pooproject\TelaInicialController.class
 com\mycompany\pooproject\PrimaryController.class
 com\mycompany\pooproject\SecondaryController.class
+com\mycompany\pooproject\Classes\Microondas.class
 module-info.class
 com\mycompany\pooproject\App.class
 com\mycompany\pooproject\TelaInicial.class
