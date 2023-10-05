@@ -5,12 +5,12 @@ import java.net.URL;
 import javafx.css.CompoundSelector;
 
 public class Eletrodomestico {
-    private final String modelo;
-    private final String marca;
-    private final String cor;
-    private final float volume;
-    private final float eficiencia;
-    private final float preço;
+    private String modelo;
+    private String marca;
+    private String cor;
+    private float volume;
+    private float eficiencia;
+    private float preço;
     
     public Eletrodomestico(String modelo, String marca, String cor, float volume, float eficiencia, float preço) {
         this.modelo = modelo;
@@ -21,8 +21,12 @@ public class Eletrodomestico {
         this.preço = preço;
     }
     
+    public Eletrodomestico(String modelo) {
+        this.modelo = modelo;
+    }
+    
     public String getFinalName() {
-        String finalName = modelo + " -- " + marca;
+        String finalName = marca + " " + modelo;
         return finalName;
     }
 }

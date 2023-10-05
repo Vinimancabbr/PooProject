@@ -21,25 +21,12 @@ import java.util.ArrayList;
 
 
 public class TelaInicialController implements Initializable {
-    
-    /*--creating Objects--*/
-        
-    ArrayList<Geladeira> geladeiraList;
-    
-    Geladeira gela1 = new Geladeira("teste1", "exMarca1", "exCor1", 100, 50, 100, "10 x 20 x 30 cm", true);
-    Geladeira gela2 = new Geladeira("teste2", "exMarca2", "exCor2", 200, 150, 200, "20 x 30 x 40 cm", false);
-    Geladeira gela3 = new Geladeira("teste3", "exMarca3", "exCor3", 300, 250, 300, "30 x 140 x 50 cm", true);
-    Geladeira gela4 = new Geladeira("teste4", "exMarca4", "exCor4", 400, 350, 400, "60 x 70 x 80 cm", false);
-    Geladeira gela5 = new Geladeira("teste5", "exMarca5", "exCor5", 500, 450, 500, "90 x 100 x 110 cm", true);
-        
-        String[] geladeiras = {gela1.getFinalName(), gela2.getFinalName(), gela3.getFinalName(), gela4.getFinalName(), gela5.getFinalName()};
-
-/*Scene changer funcionality--*/
+         
+/*--Funcionalidade de mudança de cena--*/
     private Stage stage;
     private Scene scene;
     private Parent root;
     
-   
     public void switchToScene1(ActionEvent event) throws IOException {
         URL url = getClass().getResource("scene1.fxml");
         root = FXMLLoader.load(url);
@@ -59,29 +46,25 @@ public class TelaInicialController implements Initializable {
         scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("scene1.css").toExternalForm());
         stage.setScene(scene);
-        stage.show();  
+        getSelected();
+        stage.show();
         }
+/*--Funcionalidade de mudança de cena*/
     
-/*--Scene changer funcionality*/
-    
-    
-    
-/*List funcionality--*/
+/*--Funcionalidade da lista--*/
     @FXML private ChoiceBox<String> typeChoice;
-    
-    
+   
     private final String[] types = {"                                                                                      ", 
         "Microondas", 
         "Geladeira", 
         "Maquina De Lavar"};
     
-    @FXML private ListView<String> leftListView;
-    @FXML private ListView<String> rightListView;
+    @FXML  private ListView<String> leftListView;
+    @FXML  private ListView<String> rightListView;
     
     public void createList (ActionEvent event) {
-
         String[] microondas = {"Micro1", "Micro2", "Micro3", "Micro4"};
-        //String[] geladeiras = {"Gela1", "Gela2", "Gela3", "Gela4"};
+        String[] geladeiras = {"exMarca1 teste1", "exMarca2 teste1", "exMarca3 teste1", "exMarca4 teste1", "exMarca5 teste5", "exMarca6 teste6", "exMarca7 teste7", "exMarca8 teste8", "exMarca9 teste9", "exMarca10 teste10"};
         String[] maquinasDeLavar = {"maquina1", "maquina2", "maquina3", "maquina4"};
         
         String type = typeChoice.getValue();
@@ -103,14 +86,64 @@ public class TelaInicialController implements Initializable {
             default:
                 break;
         }
+        leftListView.getSelectionModel().select(0);
+        rightListView.getSelectionModel().select(0);
     }
-/*--List funcionality*/
+/*--Funcionalidade da lista*/
+    
+/*--Funcionalidade de pegar as instâncias das que serão comparadas--*/ 
+        public void getSelected() {
+        String type = typeChoice.getValue();
+        String leftEletroName = leftListView.getSelectionModel().getSelectedItem();
+        String rightEletroName = rightListView.getSelectionModel().getSelectedItem();
+        
+//Escolhe que tipo de eletro vai ser carregado pra não carregar todos simultaneamente;
+        switch (type) {
+            case "Geladeira":
+        System.out.println("Escolheu geladeira");
+                ArrayList<Geladeira> geladeiraArray = new ArrayList<Geladeira>();
+                
+                Geladeira geladeiraSelecionadaEsquerda = new Geladeira("placeHolder left");
+                Geladeira geladeiraSelecionadaDireita = new Geladeira("placeHolder right");
+
+                geladeiraArray.add(new Geladeira("teste1", "exMarca1", "exCor1", 100, 50, 100, "10 x 20 x 30 cm", true));
+                geladeiraArray.add(new Geladeira("teste2", "exMarca2", "exCor2", 200, 150, 200, "20 x 30 x 40 cm", false));
+                geladeiraArray.add(new Geladeira("teste3", "exMarca3", "exCor3", 300, 250, 300, "30 x 140 x 50 cm", true));
+                geladeiraArray.add(new Geladeira("teste4", "exMarca4", "exCor4", 400, 350, 400, "60 x 70 x 80 cm", false));
+                geladeiraArray.add(new Geladeira("teste5", "exMarca5", "exCor5", 500, 450, 500, "90 x 100 x 110 cm", true));
+                geladeiraArray.add(new Geladeira("teste6", "exMarca6", "exCor6", 100, 50, 100, "10 x 20 x 30 cm", true));
+                geladeiraArray.add(new Geladeira("teste7", "exMarca7", "exCor7", 200, 150, 200, "20 x 30 x 40 cm", false));
+                geladeiraArray.add(new Geladeira("teste8", "exMarca8", "exCor8", 300, 250, 300, "30 x 140 x 50 cm", true));
+                geladeiraArray.add(new Geladeira("teste9", "exMarca9", "exCor9", 400, 350, 400, "60 x 70 x 80 cm", false));
+                geladeiraArray.add(new Geladeira("teste10", "exMarca10", "exCor10", 500, 450, 500, "90 x 100 x 110 cm", true));
+//Processo de pegar as instâncias das selecionadas;
+                for (Geladeira std : geladeiraArray) {
+                    if ((std.getFinalName()).equalsIgnoreCase(leftEletroName)) {
+                        geladeiraSelecionadaEsquerda = std; 
+                        System.out.println("Esquerda:" + geladeiraSelecionadaEsquerda.getFinalName());
+                    }
+                    if ((std.getFinalName()).equalsIgnoreCase(rightEletroName)) {
+                        geladeiraSelecionadaDireita = std;    
+                        System.out.println("Direita: " + geladeiraSelecionadaDireita.getFinalName());
+                    }
+                }
+                TelaComparacaoController.comparar(geladeiraSelecionadaEsquerda, geladeiraSelecionadaDireita);
+        }  
+    }
+        
+        
+/*--Funcionalidade de pegar as instâncias das que serão comparadas*/ 
+
     
     @Override public void initialize(URL url, ResourceBundle rb) {
-        
         typeChoice.getItems().addAll(types);
         typeChoice.setOnAction(this::createList);
     }
+    
 }
+
+
+
+    
 
 
