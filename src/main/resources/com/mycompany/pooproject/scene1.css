@@ -6,5 +6,5 @@
 }
 
 .choice-box .context-menu { 
-    
+    -fx-pref-width: 350px;
 }

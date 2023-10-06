@@ -54,7 +54,7 @@ public class TelaInicialController implements Initializable {
 /*--Funcionalidade da lista--*/
     @FXML private ChoiceBox<String> typeChoice;
    
-    private final String[] types = {"                                                                                      ", 
+    private final String[] types = { 
         "Microondas", 
         "Geladeira", 
         "Maquina De Lavar"};
@@ -63,8 +63,9 @@ public class TelaInicialController implements Initializable {
     @FXML  private ListView<String> rightListView;
     
     public void createList (ActionEvent event) {
+        
         String[] microondas = {"Micro1", "Micro2", "Micro3", "Micro4"};
-        String[] geladeiras = {"exMarca1 teste1", "exMarca2 teste1", "exMarca3 teste1", "exMarca4 teste1", "exMarca5 teste5", "exMarca6 teste6", "exMarca7 teste7", "exMarca8 teste8", "exMarca9 teste9", "exMarca10 teste10"};
+        String[] geladeiras = {"exMarca1 teste1", "exMarca2 teste2", "exMarca3 teste3", "exMarca4 teste4", "exMarca5 teste5", "exMarca6 teste6", "exMarca7 teste7", "exMarca8 teste8", "exMarca9 teste9", "exMarca10 teste10"};
         String[] maquinasDeLavar = {"maquina1", "maquina2", "maquina3", "maquina4"};
         
         String type = typeChoice.getValue();
@@ -117,7 +118,10 @@ public class TelaInicialController implements Initializable {
                 geladeiraArray.add(new Geladeira("teste9", "exMarca9", "exCor9", 400, 350, 400, "60 x 70 x 80 cm", false));
                 geladeiraArray.add(new Geladeira("teste10", "exMarca10", "exCor10", 500, 450, 500, "90 x 100 x 110 cm", true));
 //Processo de pegar as instâncias das selecionadas;
+                System.out.println("Para comparar esquerda: " + leftEletroName);
+                System.out.println("Para comparar direita: " + rightEletroName);
                 for (Geladeira std : geladeiraArray) {
+                    System.out.println("Valor atual: " + std.getFinalName());
                     if ((std.getFinalName()).equalsIgnoreCase(leftEletroName)) {
                         geladeiraSelecionadaEsquerda = std; 
                         System.out.println("Esquerda:" + geladeiraSelecionadaEsquerda.getFinalName());
@@ -127,7 +131,7 @@ public class TelaInicialController implements Initializable {
                         System.out.println("Direita: " + geladeiraSelecionadaDireita.getFinalName());
                     }
                 }
-                TelaComparacaoController.comparar(geladeiraSelecionadaEsquerda, geladeiraSelecionadaDireita);
+                TelaComparacaoController.comparar(geladeiraSelecionadaEsquerda, geladeiraSelecionadaDireita, type);
         }  
     }
         
@@ -138,6 +142,7 @@ public class TelaInicialController implements Initializable {
     @Override public void initialize(URL url, ResourceBundle rb) {
         typeChoice.getItems().addAll(types);
         typeChoice.setOnAction(this::createList);
+        typeChoice.setValue(types[0]);
     }
     
 }

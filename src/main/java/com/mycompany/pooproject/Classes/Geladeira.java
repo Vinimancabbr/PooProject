@@ -18,4 +18,16 @@ public class Geladeira extends Eletrodomestico {
     public Geladeira(String modelo) {
         super(modelo);
     }
+    
+    /*--Métodos get--*/
+    public String getType() {
+        return type;
+    }
+    public String getDimensão() {
+        return dimensão;
+    }
+    public boolean getFrostFree() {
+        return FrostFree;
+    }
+    
 }

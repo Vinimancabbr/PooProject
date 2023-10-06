@@ -35,8 +35,6 @@
                   <RowConstraints maxHeight="438.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="438.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="438.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="438.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="438.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
                   <ImageView fitHeight="138.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
@@ -47,7 +45,7 @@
                         <Image url="@Imagens/igãoteste.jpg" />
                      </image>
                   </ImageView>
-                  <Label text="Linha 1" GridPane.rowIndex="2">
+                  <Label fx:id="modeloLeft" text="Modelo:" GridPane.rowIndex="2">
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>
@@ -58,56 +56,35 @@
                         <Font size="17.0" />
                      </font>
                   </Label>
-                  <Label text="Linha 2" GridPane.rowIndex="3">
+                  <Label fx:id="marcaLeft" text="Marca:" GridPane.rowIndex="3">
                      <padding>
                         <Insets left="100.0" />
                      </padding>
                      <font>
                         <Font size="17.0" />
                      </font></Label>
-                  <Label text="Linha 3" GridPane.rowIndex="4">
+                  <Label fx:id="corLeft" text="Cor:" GridPane.rowIndex="4">
                      <padding>
                         <Insets left="100.0" />
                      </padding>
                      <font>
                         <Font size="17.0" />
                      </font></Label>
-                  <Label text="Linha 4" GridPane.rowIndex="5">
+                  <Label fx:id="volumeLeft" text="Volume:" GridPane.rowIndex="5">
                      <padding>
                         <Insets left="100.0" />
                      </padding>
                      <font>
                         <Font size="17.0" />
                      </font></Label>
-                  <Label text="Linha 5" GridPane.rowIndex="6">
+                  <Label fx:id="eficiênciaLeft" text="Eficiência:" GridPane.rowIndex="6">
                      <padding>
                         <Insets left="100.0" />
                      </padding>
                      <font>
                         <Font size="17.0" />
                      </font></Label>
-                  <Label text="Linha 6" GridPane.rowIndex="7">
-                     <padding>
-                        <Insets left="100.0" />
-                     </padding>
-                     <font>
-                        <Font size="17.0" />
-                     </font></Label>
-                  <Label text="Linha 7" GridPane.rowIndex="8">
-                     <padding>
-                        <Insets left="100.0" />
-                     </padding>
-                     <font>
-                        <Font size="17.0" />
-                     </font></Label>
-                  <Label text="Linha 8" GridPane.rowIndex="9">
-                     <padding>
-                        <Insets left="100.0" />
-                     </padding>
-                     <font>
-                        <Font size="17.0" />
-                     </font></Label>
-                  <Label text="Linha 8" GridPane.rowIndex="10">
+                  <Label fx:id="preçoLeft" text="Preço:" GridPane.rowIndex="7">
                      <padding>
                         <Insets left="100.0" />
                      </padding>
@@ -138,8 +115,6 @@
                   <RowConstraints maxHeight="438.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="438.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="438.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="438.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="438.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
                   <ImageView fitHeight="138.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
@@ -150,7 +125,7 @@
                         <Image url="@Imagens/igãoteste.jpg" />
                      </image>
                   </ImageView>
-                  <Label text="Linha 1" GridPane.rowIndex="2">
+                  <Label fx:id="modeloRight" text="Modelo:" GridPane.rowIndex="2">
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>
@@ -161,7 +136,7 @@
                         <Font size="17.0" />
                      </font>
                   </Label>
-                  <Label text="Linha 2" GridPane.rowIndex="3">
+                  <Label fx:id="marcaRight" text="Marca:" GridPane.rowIndex="3">
                      <padding>
                         <Insets left="100.0" />
                      </padding>
@@ -169,7 +144,7 @@
                         <Font size="17.0" />
                      </font>
                   </Label>
-                  <Label text="Linha 3" GridPane.rowIndex="4">
+                  <Label fx:id="corRight" text="Cor:" GridPane.rowIndex="4">
                      <padding>
                         <Insets left="100.0" />
                      </padding>
@@ -177,7 +152,7 @@
                         <Font size="17.0" />
                      </font>
                   </Label>
-                  <Label text="Linha 4" GridPane.rowIndex="5">
+                  <Label fx:id="volumeRight" text="Volume:" GridPane.rowIndex="5">
                      <padding>
                         <Insets left="100.0" />
                      </padding>
@@ -185,7 +160,7 @@
                         <Font size="17.0" />
                      </font>
                   </Label>
-                  <Label text="Linha 5" GridPane.rowIndex="6">
+                  <Label fx:id="eficiênciaRight" text="Eficiência:" GridPane.rowIndex="6">
                      <padding>
                         <Insets left="100.0" />
                      </padding>
@@ -193,31 +168,7 @@
                         <Font size="17.0" />
                      </font>
                   </Label>
-                  <Label text="Linha 6" GridPane.rowIndex="7">
-                     <padding>
-                        <Insets left="100.0" />
-                     </padding>
-                     <font>
-                        <Font size="17.0" />
-                     </font>
-                  </Label>
-                  <Label text="Linha 7" GridPane.rowIndex="8">
-                     <padding>
-                        <Insets left="100.0" />
-                     </padding>
-                     <font>
-                        <Font size="17.0" />
-                     </font>
-                  </Label>
-                  <Label text="Linha 8" GridPane.rowIndex="9">
-                     <padding>
-                        <Insets left="100.0" />
-                     </padding>
-                     <font>
-                        <Font size="17.0" />
-                     </font>
-                  </Label>
-                  <Label text="Linha 8" GridPane.rowIndex="10">
+                  <Label fx:id="preçoRight" text="Preço:" GridPane.rowIndex="7">
                      <padding>
                         <Insets left="100.0" />
                      </padding>

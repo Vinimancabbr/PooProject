@@ -9,7 +9,7 @@ public class Eletrodomestico {
     private String marca;
     private String cor;
     private float volume;
-    private float eficiencia;
+    private float eficiência;
     private float preço;
     
     public Eletrodomestico(String modelo, String marca, String cor, float volume, float eficiencia, float preço) {
@@ -17,13 +17,40 @@ public class Eletrodomestico {
         this.marca = marca;
         this.cor = cor;
         this.volume = volume;
-        this.eficiencia = eficiencia;
+        this.eficiência = eficiencia;
         this.preço = preço;
     }
     
     public Eletrodomestico(String modelo) {
         this.modelo = modelo;
     }
+    
+    /*--Métodos get--*/
+    public String getModelo() {
+        return modelo;
+    }
+    public String getMarca() {
+        return marca;
+    }
+    public String getCor() {
+        return cor;
+    }
+    public Float getVolume() {
+        return volume;
+    }
+    public float getEficiência() {
+        return eficiência;
+    }
+    public float getPreço() {
+        return preço;
+    }
+    
+    
+    
+    
+    
+    
+    
     
     public String getFinalName() {
         String finalName = marca + " " + modelo;
