@@ -29,5 +29,4 @@ public class Geladeira extends Eletrodomestico {
     public boolean getFrostFree() {
         return FrostFree;
     }
-    
 }
