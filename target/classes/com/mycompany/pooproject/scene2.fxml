@@ -22,122 +22,6 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="10.0" layoutY="10.0" prefHeight="614.0" prefWidth="1000.0" GridPane.columnIndex="1">
-               <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
-               </columnConstraints>
-               <rowConstraints>
-                  <RowConstraints maxHeight="429.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="533.0" minHeight="0.0" prefHeight="271.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="469.0" minHeight="0.0" prefHeight="400.0" vgrow="SOMETIMES" />
-               </rowConstraints>
-               <children>
-                  <ImageView fitHeight="138.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                     <GridPane.margin>
-                        <Insets />
-                     </GridPane.margin>
-                     <image>
-                        <Image url="@Imagens/igãoteste.jpg" />
-                     </image>
-                  </ImageView>
-                  <ScrollPane prefHeight="379.0" prefWidth="640.0" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                     <GridPane.margin>
-                        <Insets />
-                     </GridPane.margin>
-                     <content>
-                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="25.0">
-                           <children>
-                              <Label fx:id="modeloRight" text="Modelo:">
-                                 <padding>
-                                    <Insets left="100.0" />
-                                 </padding>
-                                 <font>
-                                    <Font size="17.0" />
-                                 </font>
-                              </Label>
-                              <Label fx:id="marcaRight" text="Marca:">
-                                 <padding>
-                                    <Insets left="100.0" />
-                                 </padding>
-                                 <font>
-                                    <Font size="17.0" />
-                                 </font>
-                              </Label>
-                              <Label fx:id="corRight" text="Cor:">
-                                 <padding>
-                                    <Insets left="100.0" />
-                                 </padding>
-                                 <font>
-                                    <Font size="17.0" />
-                                 </font>
-                              </Label>
-                              <Label fx:id="volumeRight" text="Volume:">
-                                 <padding>
-                                    <Insets left="100.0" />
-                                 </padding>
-                                 <font>
-                                    <Font size="17.0" />
-                                 </font>
-                              </Label>
-                              <Label fx:id="eficiênciaRight" text="Eficiência:">
-                                 <padding>
-                                    <Insets left="100.0" />
-                                 </padding>
-                                 <font>
-                                    <Font size="17.0" />
-                                 </font>
-                              </Label>
-                              <Label fx:id="preçoRight" text="Preço:">
-                                 <padding>
-                                    <Insets left="100.0" />
-                                 </padding>
-                                 <font>
-                                    <Font size="17.0" />
-                                 </font>
-                              </Label>
-                              <Label fx:id="adaptableRight1" layoutX="10.0" layoutY="265.0" text="adaptable1">
-                                 <padding>
-                                    <Insets left="100.0" />
-                                 </padding>
-                                 <font>
-                                    <Font size="17.0" />
-                                 </font>
-                              </Label>
-                              <Label fx:id="adaptableRight2" layoutX="10.0" layoutY="316.0" text="adaptable2">
-                                 <padding>
-                                    <Insets left="100.0" />
-                                 </padding>
-                                 <font>
-                                    <Font size="17.0" />
-                                 </font>
-                              </Label>
-                              <Label fx:id="adaptableRight3" layoutX="10.0" layoutY="367.0" text="adaptable3">
-                                 <padding>
-                                    <Insets left="100.0" />
-                                 </padding>
-                                 <font>
-                                    <Font size="17.0" />
-                                 </font>
-                              </Label>
-                              <Label fx:id="adaptableRight4" layoutX="10.0" layoutY="418.0" text="adaptable4">
-                                 <padding>
-                                    <Insets left="100.0" />
-                                 </padding>
-                                 <font>
-                                    <Font size="17.0" />
-                                 </font>
-                              </Label>
-                           </children>
-                        </VBox>
-                     </content>
-                  </ScrollPane>
-                  <Label text="Modelo do produto" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                     <font>
-                        <Font size="33.0" />
-                     </font>
-                  </Label>
-               </children>
-            </GridPane>
             <GridPane alignment="CENTER" gridLinesVisible="true" prefHeight="614.0" prefWidth="1000.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
@@ -211,7 +95,7 @@
                                     <Font size="17.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="adaptableLeft1" layoutX="10.0" layoutY="265.0" text="adaptable1">
+                              <Label fx:id="adaptableLeft1" layoutX="10.0" layoutY="265.0">
                                  <padding>
                                     <Insets left="100.0" />
                                  </padding>
@@ -219,7 +103,7 @@
                                     <Font size="17.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="adaptableLeft2" layoutX="10.0" layoutY="316.0" text="adaptable2">
+                              <Label fx:id="adaptableLeft2" layoutX="10.0" layoutY="316.0">
                                  <padding>
                                     <Insets left="100.0" />
                                  </padding>
@@ -227,7 +111,7 @@
                                     <Font size="17.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="adaptableLeft3" layoutX="10.0" layoutY="367.0" text="adaptable3">
+                              <Label fx:id="adaptableLeft3" layoutX="10.0" layoutY="367.0">
                                  <padding>
                                     <Insets left="100.0" />
                                  </padding>
@@ -235,7 +119,7 @@
                                     <Font size="17.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="adaptableLeft4" layoutX="10.0" layoutY="418.0" text="adaptable4">
+                              <Label fx:id="adaptableLeft4" layoutX="10.0" layoutY="418.0">
                                  <padding>
                                     <Insets left="100.0" />
                                  </padding>
@@ -247,7 +131,7 @@
                         </VBox>
                      </content>
                   </ScrollPane>
-                  <Label text="Modelo do produto" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <Label fx:id="finalNameLeft" text="Modelo do produto" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <font>
                         <Font size="33.0" />
                      </font>
@@ -256,6 +140,122 @@
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
+            </GridPane>
+            <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="10.0" layoutY="10.0" prefHeight="614.0" prefWidth="1000.0" GridPane.columnIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="429.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="533.0" minHeight="0.0" prefHeight="271.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="469.0" minHeight="0.0" prefHeight="400.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fitHeight="138.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="@Imagens/igãoteste.jpg" />
+                     </image>
+                  </ImageView>
+                  <ScrollPane prefHeight="379.0" prefWidth="640.0" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <content>
+                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="25.0">
+                           <children>
+                              <Label fx:id="modeloRight" text="Modelo:">
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="marcaRight" text="Marca:">
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="corRight" text="Cor:">
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="volumeRight" text="Volume:">
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="eficiênciaRight" text="Eficiência:">
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="preçoRight" text="Preço:">
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="adaptableRight1" layoutX="10.0" layoutY="265.0">
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="adaptableRight2" layoutX="10.0" layoutY="316.0">
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="adaptableRight3" layoutX="10.0" layoutY="367.0">
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="adaptableRight4" layoutX="10.0" layoutY="418.0">
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <Label fx:id="finalNameRight" text="Modelo do produto" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Label>
+               </children>
             </GridPane>
          </children>
       </GridPane>

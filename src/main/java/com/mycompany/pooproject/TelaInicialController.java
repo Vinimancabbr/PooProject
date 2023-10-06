@@ -1,7 +1,10 @@
 package com.mycompany.pooproject;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mycompany.pooproject.Classes.Eletrodomestico;
 import com.mycompany.pooproject.Classes.Geladeira;
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -17,11 +20,13 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import java.util.ArrayList;
+import java.util.List;
 
 
 
 public class TelaInicialController implements Initializable {
-         
+    
+    
 /*--Funcionalidade de mudança de cena--*/
     private Stage stage;
     private Scene scene;
@@ -65,7 +70,13 @@ public class TelaInicialController implements Initializable {
     public void createList (ActionEvent event) {
         
         String[] microondas = {"Micro1", "Micro2", "Micro3", "Micro4"};
-        String[] geladeiras = {"exMarca1 teste1", "exMarca2 teste2", "exMarca3 teste3", "exMarca4 teste4", "exMarca5 teste5", "exMarca6 teste6", "exMarca7 teste7", "exMarca8 teste8", "exMarca9 teste9", "exMarca10 teste10"};
+        String[] geladeiras = {"Brastemp BRM45HK", "Brastemp BRM44HK", "Brastemp BRE57AK", "Brastemp Bro85ak", "Brastemp BRE57AB", 
+            "Brastemp BRE85AK", "Brastemp BRM54JK", "Brastemp BRM45JB", "Brastemp BRM45JK", "Brastemp BRE85AB", "Brastemp BRM44HK", 
+            "Brastemp BRM56BK", "Consul CRE44BK", "Consul CRB39", "Consul CRM44AK", "Consul CRM39AK", "Consul CRM56FK",
+            "Consul CRM44AB", "Consul CRE44BB", "Consul CRB39AK", "Consul CRM56FB", "Consul  CRB39AB", "Consul CRM39AB", "Consul CRB36AB", 
+            "Consul CRD37EB", "Electrtolux IB45S", "Electrtolux DB44S", "Electrtolux IM8S", "Electrtolux TF39S", "Electrtolux DFX41", 
+            "Electrolux DW44S", "Electrtolux TF56S", "Electrtolux DC35A", "Electrtolux DFN41", "Electrtolux RE31", "Electrtolux TF39",
+            "Electrtolux TF42S", "Electrtolux IB55", "Electrtolux DF44S", "Electrtolux if45", "Parasonic NR-BB53GV3B"};
         String[] maquinasDeLavar = {"maquina1", "maquina2", "maquina3", "maquina4"};
         
         String type = typeChoice.getValue();
@@ -93,7 +104,7 @@ public class TelaInicialController implements Initializable {
 /*--Funcionalidade da lista*/
     
 /*--Funcionalidade de pegar as instâncias das que serão comparadas--*/ 
-        public void getSelected() {
+        public void getSelected() throws IOException {
         String type = typeChoice.getValue();
         String leftEletroName = leftListView.getSelectionModel().getSelectedItem();
         String rightEletroName = rightListView.getSelectionModel().getSelectedItem();
@@ -101,22 +112,14 @@ public class TelaInicialController implements Initializable {
 //Escolhe que tipo de eletro vai ser carregado pra não carregar todos simultaneamente;
         switch (type) {
             case "Geladeira":
-        System.out.println("Escolheu geladeira");
-                ArrayList<Geladeira> geladeiraArray = new ArrayList<Geladeira>();
+            System.out.println("Escolheu geladeira");
+                List<Geladeira> geladeiraArray = Geladeira.createList();
+                System.out.println(geladeiraArray.get(0));
+                System.out.println((geladeiraArray.get(0)).getFinalName());
                 
                 Geladeira geladeiraSelecionadaEsquerda = new Geladeira("placeHolder left");
                 Geladeira geladeiraSelecionadaDireita = new Geladeira("placeHolder right");
 
-                geladeiraArray.add(new Geladeira("teste1", "exMarca1", "exCor1", 100, 50, 100, "10 x 20 x 30 cm", true));
-                geladeiraArray.add(new Geladeira("teste2", "exMarca2", "exCor2", 200, 150, 200, "20 x 30 x 40 cm", false));
-                geladeiraArray.add(new Geladeira("teste3", "exMarca3", "exCor3", 300, 250, 300, "30 x 140 x 50 cm", true));
-                geladeiraArray.add(new Geladeira("teste4", "exMarca4", "exCor4", 400, 350, 400, "60 x 70 x 80 cm", false));
-                geladeiraArray.add(new Geladeira("teste5", "exMarca5", "exCor5", 500, 450, 500, "90 x 100 x 110 cm", true));
-                geladeiraArray.add(new Geladeira("teste6", "exMarca6", "exCor6", 100, 50, 100, "10 x 20 x 30 cm", true));
-                geladeiraArray.add(new Geladeira("teste7", "exMarca7", "exCor7", 200, 150, 200, "20 x 30 x 40 cm", false));
-                geladeiraArray.add(new Geladeira("teste8", "exMarca8", "exCor8", 300, 250, 300, "30 x 140 x 50 cm", true));
-                geladeiraArray.add(new Geladeira("teste9", "exMarca9", "exCor9", 400, 350, 400, "60 x 70 x 80 cm", false));
-                geladeiraArray.add(new Geladeira("teste10", "exMarca10", "exCor10", 500, 450, 500, "90 x 100 x 110 cm", true));
 //Processo de pegar as instâncias das selecionadas;
                 System.out.println("Para comparar esquerda: " + leftEletroName);
                 System.out.println("Para comparar direita: " + rightEletroName);

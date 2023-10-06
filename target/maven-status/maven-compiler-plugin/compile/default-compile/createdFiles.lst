@@ -1,7 +1,8 @@
-com\mycompany\pooproject\TelaInicialController.class
 com\mycompany\pooproject\Classes\Eletrodomestico.class
-module-info.class
+com\mycompany\pooproject\Classes\Geladeira$1.class
 com\mycompany\pooproject\TelaComparacaoController.class
-com\mycompany\pooproject\App.class
 com\mycompany\pooproject\Classes\Geladeira.class
+com\mycompany\pooproject\TelaInicialController.class
+module-info.class
+com\mycompany\pooproject\App.class
 com\mycompany\pooproject\TelaInicial.class

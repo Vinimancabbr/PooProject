@@ -8,17 +8,21 @@ public class Eletrodomestico {
     private String modelo;
     private String marca;
     private String cor;
-    private float volume;
-    private float eficiência;
-    private float preço;
+    private double peso;
+    private double volume;
+    private double eficiência;
+    private double preço;
     
-    public Eletrodomestico(String modelo, String marca, String cor, float volume, float eficiencia, float preço) {
+    public Eletrodomestico(String modelo, String marca, String cor, double peso, double volume, double eficiencia, double preço) {
         this.modelo = modelo;
         this.marca = marca;
         this.cor = cor;
+        this.peso = peso;
         this.volume = volume;
         this.eficiência = eficiencia;
         this.preço = preço;
+    }
+    public Eletrodomestico() {
     }
     
     public Eletrodomestico(String modelo) {
@@ -35,13 +39,16 @@ public class Eletrodomestico {
     public String getCor() {
         return cor;
     }
-    public Float getVolume() {
+    public double getPeso() {
+        return peso;
+    }
+    public double getVolume() {
         return volume;
     }
-    public float getEficiência() {
+    public double getEficiência() {
         return eficiência;
     }
-    public float getPreço() {
+    public double getPreço() {
         return preço;
     }
     
@@ -54,6 +61,10 @@ public class Eletrodomestico {
     
     public String getFinalName() {
         String finalName = marca + " " + modelo;
+        return finalName;
+    }
+    public String toString() {
+        String finalName = "Marca: " + marca + " Modelo: " + modelo + " Cor: " + cor + " Peso: " + peso + " Volume: " + volume + " Eficiência: " + eficiência + " Preço: " + preço;
         return finalName;
     }
 }

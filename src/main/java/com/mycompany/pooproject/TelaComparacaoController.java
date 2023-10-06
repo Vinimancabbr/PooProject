@@ -15,6 +15,7 @@ import javafx.scene.paint.Color;
 
 public class TelaComparacaoController implements Initializable {
     /*--ListView Esquerda--*/
+    @FXML private Label finalNameLeft;
     @FXML private Label modeloLeft;
     @FXML private Label marcaLeft;
     @FXML private Label corLeft;
@@ -27,6 +28,7 @@ public class TelaComparacaoController implements Initializable {
     @FXML private Label adaptableLeft4;
     
     /*--ListView Direita--*/
+    @FXML private Label finalNameRight;
     @FXML private Label modeloRight;
     @FXML private Label marcaRight;
     @FXML private Label corRight;
@@ -41,6 +43,8 @@ public class TelaComparacaoController implements Initializable {
     private static TelaComparacaoController telaComparacaoController;
 
     static public void comparar(Eletrodomestico eletroEsquerda, Eletrodomestico eletroDireita, String type) {
+        telaComparacaoController.finalNameLeft.setText(eletroEsquerda.getFinalName());
+        telaComparacaoController.finalNameRight.setText(eletroDireita.getFinalName());
 
         System.out.println("eletro1: " + eletroEsquerda.getFinalName());
         System.out.println("eletro2: " + eletroDireita.getFinalName());
@@ -49,16 +53,16 @@ public class TelaComparacaoController implements Initializable {
         telaComparacaoController.modeloLeft.setText("Modelo: " + eletroEsquerda.getModelo());
         telaComparacaoController.marcaLeft.setText("Marca: " + eletroEsquerda.getMarca());
         telaComparacaoController.corLeft.setText("Cor: " + eletroEsquerda.getCor());
-        telaComparacaoController.volumeLeft.setText("Volume: " + Float.toString(eletroEsquerda.getVolume()));
-        telaComparacaoController.eficiênciaLeft.setText("Eficiência: " + Float.toString(eletroEsquerda.getEficiência()) + "Wh");
-        telaComparacaoController.preçoLeft.setText("Preço: " + Float.toString(eletroEsquerda.getPreço()) + "R$");
+        telaComparacaoController.volumeLeft.setText("Volume: " + Double.toString(eletroEsquerda.getVolume()));
+        telaComparacaoController.eficiênciaLeft.setText("Eficiência: " + Double.toString(eletroEsquerda.getEficiência()) + " KWh");
+        telaComparacaoController.preçoLeft.setText("Preço: " + Double.toString(eletroEsquerda.getPreço()) + " R$");
         
         telaComparacaoController.modeloRight.setText("Modelo: " + eletroDireita.getModelo());
         telaComparacaoController.marcaRight.setText("Marca: " + eletroDireita.getMarca());
         telaComparacaoController.corRight.setText("Cor: " + eletroDireita.getCor());
-        telaComparacaoController.volumeRight.setText("Volume: " + Float.toString(eletroDireita.getVolume()));
-        telaComparacaoController.eficiênciaRight.setText("Eficiência: " + Float.toString(eletroDireita.getEficiência()) + "Wh");
-        telaComparacaoController.preçoRight.setText("Preço: " + Float.toString(eletroDireita.getPreço()) + "R$");
+        telaComparacaoController.volumeRight.setText("Volume: " + Double.toString(eletroDireita.getVolume()));
+        telaComparacaoController.eficiênciaRight.setText("Eficiência: " + Double.toString(eletroDireita.getEficiência()) + " KWh");
+        telaComparacaoController.preçoRight.setText("Preço: " + Double.toString(eletroDireita.getPreço()) + " R$");
         
         /*--Colocando valores específicos de classe--*/
         if (eletroEsquerda instanceof Geladeira && eletroDireita instanceof Geladeira) {
@@ -115,13 +119,13 @@ public class TelaComparacaoController implements Initializable {
         } else {
             telaComparacaoController.preçoLeft.setTextFill(Color.BLUE);
             telaComparacaoController.preçoRight.setTextFill(Color.BLUE);
-        }
-        
+        }   
     }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         telaComparacaoController = this;
+        
     }
     
 }
