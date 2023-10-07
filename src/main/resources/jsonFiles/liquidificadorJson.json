@@ -1,0 +1,24 @@
+[
+{
+    "modelo":"OLIQ610",
+    "marca":"Oster",
+    "volume": 3.4,
+    "cor":"prata",
+    "eficiência": 1.4,
+    "peso": 0.0,
+    "diferencial": "Nenhum",
+    "preço": 209.0,
+    "potência": 1400.0
+},
+{
+    "modelo":"OLIQ606",
+    "marca":"Oster",
+    "volume": 3.2,
+    "cor":"prata",
+    "eficiência": 1.1,
+    "peso": 0.0,
+    "diferencial": "Nenhum",
+    "preço": 199.0,
+    "potência": 1100.0
+}
+]

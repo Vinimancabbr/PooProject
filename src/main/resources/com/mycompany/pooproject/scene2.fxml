@@ -32,12 +32,12 @@
                 <RowConstraints maxHeight="469.0" minHeight="0.0" prefHeight="400.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <ImageView fitHeight="138.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <ImageView fx:id="leftImage" fitHeight="138.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>
                      <image>
-                        <Image url="@Imagens/igãoteste.jpg" />
+                        <Image url="@../../../Imagens/igãoteste.jpg" />
                      </image>
                   </ImageView>
                   <ScrollPane prefHeight="379.0" prefWidth="640.0" GridPane.rowIndex="2" GridPane.valignment="CENTER">
@@ -88,6 +88,14 @@
                                  </font>
                               </Label>
                               <Label fx:id="preçoLeft" text="Preço:">
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="pesoLeft" layoutX="10.0" layoutY="265.0" text="Peso:">
                                  <padding>
                                     <Insets left="100.0" />
                                  </padding>
@@ -151,12 +159,12 @@
                   <RowConstraints maxHeight="469.0" minHeight="0.0" prefHeight="400.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <ImageView fitHeight="138.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <ImageView fx:id="rightImage" fitHeight="138.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>
                      <image>
-                        <Image url="@Imagens/igãoteste.jpg" />
+                        <Image url="@../../../Imagens/igãoteste.jpg" />
                      </image>
                   </ImageView>
                   <ScrollPane prefHeight="379.0" prefWidth="640.0" GridPane.rowIndex="2" GridPane.valignment="CENTER">
@@ -207,6 +215,14 @@
                                  </font>
                               </Label>
                               <Label fx:id="preçoRight" text="Preço:">
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="pesoRight" layoutX="10.0" layoutY="265.0" text="Peso:">
                                  <padding>
                                     <Insets left="100.0" />
                                  </padding>

@@ -1,0 +1,242 @@
+[
+{
+    "modelo":"MS3097AR",
+    "marca":"LG",
+    "volume": 30.0,
+    "cor":"prata",
+    "eficiência": 54.5,
+    "peso": 0.0,
+    "diferencial": "EasyClean",
+    "preço": 806.55
+},
+{
+    "modelo":"MT30S",
+    "marca":"Electrolux",
+    "volume": 30.0,
+    "cor":"prata",
+    "eficiência": 54.5,
+    "peso": 0.0,
+    "diferencial": "Espelhado com função tira odor",
+    "preço": 629.0
+},
+{
+    "modelo":"MI41T",
+    "marca":"Electrolux",
+    "volume": 31.0,
+    "cor":"prata",
+    "eficiência": 54,
+    "peso": 0.0,
+    "diferencial": "Painel integrado e display econômico",
+    "preço": 649.0
+},
+{
+    "modelo":"MI41S",
+    "marca":"Electrolux",
+    "volume": 31.0,
+    "cor":"prata",
+    "eficiência": 54,
+    "peso": 0.0,
+    "diferencial": "Espelhado com painel integrado e função tira odor",
+    "preço": 699.0
+},
+{
+    "modelo":"ME3EP",
+    "marca":"Electrolux",
+    "volume": 34.0,
+    "cor":"prata",
+    "eficiência": 54.7,
+    "peso": 0.0,
+    "diferencial": "Painel digital e função tira odor",
+    "preço": 1399.0
+},
+{
+    "modelo":"ME23P",
+    "marca":"Electrolux",
+    "volume": 23.0,
+    "cor":"prata",
+    "eficiência": 56.3,
+    "peso": 0.0,
+    "diferencial": "Nenhum",
+    "preço": 649.0
+},
+{
+    "modelo":"MB37R",
+    "marca":"Electrolux",
+    "volume": 27.0,
+    "cor":"prata",
+    "eficiência": 58.7,
+    "peso": 0.0,
+    "diferencial": "Função tira odor",
+    "preço": 679.0
+},
+{
+    "modelo":"ME41X",
+    "marca":"Electrolux",
+    "volume": 31.0,
+    "cor":"prata",
+    "eficiência": 49.5,
+    "peso": 0.0,
+    "diferencial": "Espelhado com função grill e painel blue touch",
+    "preço": 1299.0
+},
+{
+    "modelo":"MTO30",
+    "marca":"Electrolux",
+    "volume": 20.0,
+    "cor":"prata",
+    "eficiência": 54.1,
+    "peso": 0.0,
+    "diferencial": "Função tira odor e descongelar",
+    "preço": 579.0
+},
+{
+    "modelo":"MS37R",
+    "marca":"Electrolux",
+    "volume": 27.0,
+    "cor":"prata",
+    "eficiência": 58.7,
+    "peso": 0.0,
+    "diferencial": "Espelhado com 55 receitas pré-programadas",
+    "preço": 759.0
+},
+{
+    "modelo":"ME36S",
+    "marca":"Electrolux",
+    "volume": 36.0,
+    "cor":"prata",
+    "eficiência": 56.8,
+    "peso": 0.0,
+    "diferencial": "Nenhum",
+    "preço": 899.0
+},
+{
+    "modelo":"ME36B",
+    "marca":"Electrolux",
+    "volume": 36.0,
+    "cor":"prata",
+    "eficiência": 56.8,
+    "peso": 0.0,
+    "diferencial": "Nenhum",
+    "preço": 749.0
+},
+{
+    "modelo":"ME23B",
+    "marca":"Electrolux",
+    "volume": 23.0,
+    "cor":"prata",
+    "eficiência": 56.3,
+    "peso": 0.0,
+    "diferencial": "Nenhum",
+    "preço": 649.0
+},
+{
+    "modelo":"PMO34IP",
+    "marca":"Philco",
+    "volume": 34.0,
+    "cor":"prata",
+    "eficiência": 54.6,
+    "peso": 0.0,
+    "diferencial": "Limpa fácil",
+    "preço": 679.0
+},
+{
+    "modelo":"PMO42EB",
+    "marca":"Philco",
+    "volume": 42.0,
+    "cor":"prata",
+    "eficiência": 55.4,
+    "peso": 0.0,
+    "diferencial": "Tira odor",
+    "preço": 809.0
+},
+{
+    "modelo":"PMO37ES",
+    "marca":"Philco",
+    "volume": 37.0,
+    "cor":"prata",
+    "eficiência": 54.9,
+    "peso": 0.0,
+    "diferencial": "Limpa fácil",
+    "preço": 709.0
+},
+{
+    "modelo":"PME31BM",
+    "marca":"Philco",
+    "volume": 31.0,
+    "cor":"prata",
+    "eficiência": 52.0,
+    "peso": 0.0,
+    "diferencial": "Nenhum",
+    "preço": 1199.0
+},
+{
+    "modelo":"PMO28TF",
+    "marca":"Philco",
+    "volume": 28.0,
+    "cor":"prata",
+    "eficiência": 52.5,
+    "peso": 0.0,
+    "diferencial": "Sem prato giratório",
+    "preço": 909.0
+},
+{
+    "modelo":"PMO37BB",
+    "marca":"Philco",
+    "volume": 37.0,
+    "cor":"prata",
+    "eficiência": 54.9,
+    "peso": 0.0,
+    "diferencial": "Limpa fácil",
+    "preço": 729.0
+},
+{
+    "modelo":"PMR28V",
+    "marca":"Philco",
+    "volume": 28.0,
+    "cor":"prata",
+    "eficiência": 55.1,
+    "peso": 0.0,
+    "diferencial": "Modelo retro",
+    "preço": 679.0
+},
+{
+    "modelo":"PMO34BB",
+    "marca":"Philco",
+    "volume": 34.0,
+    "cor":"prata",
+    "eficiência": 54.9,
+    "peso": 0.0,
+    "diferencial": "Limpa fácil e tira odor",
+    "preço": 759.0
+},
+{
+    "modelo":"PMO37EB",
+    "marca":"Philco",
+    "volume": 37.0,
+    "cor":"prata",
+    "eficiência": 54.6,
+    "peso": 0.0,
+    "diferencial": "Limpa fácil",
+    "preço": 759.0
+},
+{
+    "modelo":"PMO34ES",
+    "marca":"Philco",
+    "volume": 34.0,
+    "cor":"prata",
+    "eficiência": 56.0,
+    "peso": 0.0,
+    "diferencial": "Espelhado",
+    "preço": 829.0
+},
+{
+    "modelo":"PMO62IE",
+    "marca":"Philco",
+    "volume": 55.0,
+    "cor":"prata",
+    "eficiência": 58.0,
+    "peso": 0.0,
+    "diferencial": "Espelhado",
+    "preço": 1799.0
+}
+]

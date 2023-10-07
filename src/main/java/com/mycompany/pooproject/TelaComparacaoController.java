@@ -6,22 +6,28 @@ package com.mycompany.pooproject;
 
 import com.mycompany.pooproject.Classes.Eletrodomestico;
 import com.mycompany.pooproject.Classes.Geladeira;
+import com.mycompany.pooproject.Classes.Liquidificador;
+import com.mycompany.pooproject.Classes.Microondas;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 
 public class TelaComparacaoController implements Initializable {
     /*--ListView Esquerda--*/
     @FXML private Label finalNameLeft;
+    @FXML private ImageView leftImage;
     @FXML private Label modeloLeft;
     @FXML private Label marcaLeft;
     @FXML private Label corLeft;
     @FXML private Label volumeLeft;
     @FXML private Label eficiênciaLeft;
     @FXML private Label preçoLeft;
+    @FXML private Label pesoLeft;
     @FXML private Label adaptableLeft1;
     @FXML private Label adaptableLeft2;
     @FXML private Label adaptableLeft3;
@@ -29,12 +35,14 @@ public class TelaComparacaoController implements Initializable {
     
     /*--ListView Direita--*/
     @FXML private Label finalNameRight;
+    @FXML private ImageView rightImage;
     @FXML private Label modeloRight;
     @FXML private Label marcaRight;
     @FXML private Label corRight;
     @FXML private Label volumeRight;
     @FXML private Label eficiênciaRight;
     @FXML private Label preçoRight;
+    @FXML private Label pesoRight;
     @FXML private Label adaptableRight1;
     @FXML private Label adaptableRight2;
     @FXML private Label adaptableRight3;
@@ -43,6 +51,10 @@ public class TelaComparacaoController implements Initializable {
     private static TelaComparacaoController telaComparacaoController;
 
     static public void comparar(Eletrodomestico eletroEsquerda, Eletrodomestico eletroDireita, String type) {
+        
+        /*Image imagemIcone = new Image("/Imagens/" + eletroEsquerda.getImageName() + ".jpg");
+        telaComparacaoController.leftImage.setImage(imagemIcone);*/
+        
         telaComparacaoController.finalNameLeft.setText(eletroEsquerda.getFinalName());
         telaComparacaoController.finalNameRight.setText(eletroDireita.getFinalName());
 
@@ -56,6 +68,7 @@ public class TelaComparacaoController implements Initializable {
         telaComparacaoController.volumeLeft.setText("Volume: " + Double.toString(eletroEsquerda.getVolume()));
         telaComparacaoController.eficiênciaLeft.setText("Eficiência: " + Double.toString(eletroEsquerda.getEficiência()) + " KWh");
         telaComparacaoController.preçoLeft.setText("Preço: " + Double.toString(eletroEsquerda.getPreço()) + " R$");
+        telaComparacaoController.pesoLeft.setText("Peso: " + Double.toString(eletroEsquerda.getPeso()) + " Kg");
         
         telaComparacaoController.modeloRight.setText("Modelo: " + eletroDireita.getModelo());
         telaComparacaoController.marcaRight.setText("Marca: " + eletroDireita.getMarca());
@@ -63,8 +76,9 @@ public class TelaComparacaoController implements Initializable {
         telaComparacaoController.volumeRight.setText("Volume: " + Double.toString(eletroDireita.getVolume()));
         telaComparacaoController.eficiênciaRight.setText("Eficiência: " + Double.toString(eletroDireita.getEficiência()) + " KWh");
         telaComparacaoController.preçoRight.setText("Preço: " + Double.toString(eletroDireita.getPreço()) + " R$");
+        telaComparacaoController.pesoRight.setText("Peso: " + Double.toString(eletroDireita.getPeso()) + " Kg");
         
-        /*--Colocando valores específicos de classe--*/
+        /*--Colocando valores específicos de classe e Comparando Valores Específicos--*/
         if (eletroEsquerda instanceof Geladeira && eletroDireita instanceof Geladeira) {
             telaComparacaoController.adaptableLeft1.setText("Dimensão: " + ((Geladeira) eletroEsquerda).getDimensão());
             String frostFreeLeft = ((Geladeira) eletroEsquerda).getFrostFree() ? "Sim" : "Não";
@@ -74,7 +88,6 @@ public class TelaComparacaoController implements Initializable {
             String frostFreeRight = ((Geladeira) eletroDireita).getFrostFree() ? "Sim" : "Não";
             telaComparacaoController.adaptableRight2.setText("FrostFree: " + frostFreeRight);
             
-        //Comparando Valores Específicos
             if (((Geladeira) eletroEsquerda).getFrostFree() == ((Geladeira) eletroDireita).getFrostFree()) {
                 telaComparacaoController.adaptableLeft2.setTextFill(Color.BLUE);
                 telaComparacaoController.adaptableRight2.setTextFill(Color.BLUE);
@@ -85,7 +98,50 @@ public class TelaComparacaoController implements Initializable {
                 telaComparacaoController.adaptableLeft2.setTextFill(Color.RED);
                 telaComparacaoController.adaptableRight2.setTextFill(Color.GREEN);
             }
+        } else if (eletroEsquerda instanceof  Microondas && eletroDireita instanceof Microondas) {
+            telaComparacaoController.adaptableLeft1.setText("Diferencial: " + ((Microondas) eletroEsquerda).getDiferencial());
+            telaComparacaoController.adaptableRight1.setText("Diferencial: " + ((Microondas) eletroDireita).getDiferencial());
+            if (((Microondas) eletroEsquerda).getDiferencial().equalsIgnoreCase("Nenhum")) {
+                telaComparacaoController.adaptableLeft1.setTextFill(Color.RED);
+            } else {
+                telaComparacaoController.adaptableLeft1.setTextFill(Color.GREEN);
+            }
+            
+            if (((Microondas) eletroDireita).getDiferencial().equalsIgnoreCase("Nenhum")) {
+                telaComparacaoController.adaptableRight1.setTextFill(Color.RED);
+            } else {
+                telaComparacaoController.adaptableRight1.setTextFill(Color.GREEN);
+            }
+        } else if (eletroEsquerda instanceof  Liquidificador && eletroDireita instanceof Liquidificador) {
+            telaComparacaoController.adaptableLeft1.setText("Diferencial: " + ((Liquidificador) eletroEsquerda).getDiferencial());
+            telaComparacaoController.adaptableRight1.setText("Diferencial: " + ((Liquidificador) eletroDireita).getDiferencial());
+            telaComparacaoController.adaptableLeft2.setText("Potência: " + ((Liquidificador) eletroEsquerda).getPotência());
+            telaComparacaoController.adaptableRight2.setText("Potência: " + ((Liquidificador) eletroDireita).getPotência());
+            
+            if (((Liquidificador) eletroEsquerda).getDiferencial().equalsIgnoreCase("Nenhum")) {
+                telaComparacaoController.adaptableLeft1.setTextFill(Color.RED);
+            } else {
+                telaComparacaoController.adaptableLeft1.setTextFill(Color.GREEN);
+            }
+            
+            if (((Liquidificador) eletroDireita).getDiferencial().equalsIgnoreCase("Nenhum")) {
+                telaComparacaoController.adaptableRight1.setTextFill(Color.RED);
+            } else {
+                telaComparacaoController.adaptableRight1.setTextFill(Color.GREEN);
+            }
+            
+            if (((Liquidificador) eletroEsquerda).getPotência() < ((Liquidificador) eletroDireita).getPotência()) {
+                telaComparacaoController.adaptableLeft2.setTextFill(Color.RED);
+                telaComparacaoController.adaptableRight2.setTextFill(Color.GREEN);
+            } else if (((Liquidificador) eletroEsquerda).getPotência() > ((Liquidificador) eletroDireita).getPotência()) {
+                telaComparacaoController.adaptableLeft2.setTextFill(Color.GREEN);
+                telaComparacaoController.adaptableRight2.setTextFill(Color.RED);
+            } else {
+                telaComparacaoController.adaptableLeft2.setTextFill(Color.BLUE);
+                telaComparacaoController.adaptableRight2.setTextFill(Color.BLUE);
+            }
         }
+        
         /*--Comparando os valores gerais--*/
         //Volume
         if (eletroEsquerda.getVolume() > eletroDireita.getVolume()) {
@@ -120,12 +176,22 @@ public class TelaComparacaoController implements Initializable {
             telaComparacaoController.preçoLeft.setTextFill(Color.BLUE);
             telaComparacaoController.preçoRight.setTextFill(Color.BLUE);
         }   
+        //Peso
+        if (eletroEsquerda.getPeso() > eletroDireita.getPeso()) {
+            telaComparacaoController.pesoLeft.setTextFill(Color.GREEN);
+            telaComparacaoController.pesoRight.setTextFill(Color.RED);
+        } else if (eletroEsquerda.getPeso()< eletroDireita.getPeso()) {
+            telaComparacaoController.pesoLeft.setTextFill(Color.RED);
+            telaComparacaoController.pesoRight.setTextFill(Color.GREEN);
+        } else {
+            telaComparacaoController.pesoLeft.setTextFill(Color.BLUE);
+            telaComparacaoController.pesoRight.setTextFill(Color.BLUE);
+        }
     }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         telaComparacaoController = this;
-        
     }
     
 }

@@ -51,17 +51,14 @@ public class Eletrodomestico {
     public double getPreço() {
         return preço;
     }
-    
-    
-    
-    
-    
-    
-    
-    
     public String getFinalName() {
         String finalName = marca + " " + modelo;
         return finalName;
+    }
+    
+    public String getImageName() {
+        String imageName = marca + modelo;
+        return imageName;
     }
     public String toString() {
         String finalName = "Marca: " + marca + " Modelo: " + modelo + " Cor: " + cor + " Peso: " + peso + " Volume: " + volume + " Eficiência: " + eficiência + " Preço: " + preço;

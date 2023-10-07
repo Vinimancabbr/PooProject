@@ -39,9 +39,9 @@
     "cor":"prata",
     "eficiência": 56.6,
     "peso": 103.0,
-    "dimensão": "",
+    "dimensão": "83 x 87W x 192 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 6331.0
 },   
 {
     "modelo":"BRE57AB",
@@ -50,9 +50,9 @@
     "cor":"prata",
     "eficiência": 66.0,
     "peso": 85.0,
-    "dimensão": "",
+    "dimensão": "77 x 79,4 x 189 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 3769.0
 },
 {
     "modelo":"BRE85AK",
@@ -61,9 +61,9 @@
     "cor":"prata",
     "eficiência": 68.0,
     "peso": 99.0,
-    "dimensão": "",
+    "dimensão": "83,7 x 79,1 x 187,9 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 5034.0
 },
 {
     "modelo":"BRM54JK",
@@ -72,9 +72,9 @@
     "cor":"prata",
     "eficiência": 51.4,
     "peso": 66.0,
-    "dimensão": "",
+    "dimensão": "75,5 x 62 x 185 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 3324.0
 },
 {
     "modelo":"BRM45JB",
@@ -83,9 +83,9 @@
     "cor":"prata",
     "eficiência": 48.8,
     "peso": 58.0,
-    "dimensão": "",
+    "dimensão": "75,5 x 62 x 176 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 3049.0
 },
 {
     "modelo":"BRM45JK",
@@ -94,9 +94,9 @@
     "cor":"prata",
     "eficiência": 48.8,
     "peso": 58.0,
-    "dimensão": "",
+    "dimensão": "75,5 x 62 x 176 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 3099.0
 },
 {
     "modelo":"BRE85AB",
@@ -105,9 +105,9 @@
     "cor":"branca",
     "eficiência": 68.0,
     "peso": 99.0,
-    "dimensão": "",
+    "dimensão": "83,7 x 79,1 x 187,9 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 4935.00
 },
 {
     "modelo":"BRM44HK",
@@ -116,9 +116,9 @@
     "cor":"prata",
     "eficiência": 54.0,
     "peso": 58.0,
-    "dimensão": "",
+    "dimensão": "75, x 62,1 x 176 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 2944.0
 },
 {
     "modelo":"BRM56BK",
@@ -127,9 +127,9 @@
     "cor":"prata",
     "eficiência": 52.4,
     "peso": 80.0,
-    "dimensão": "",
+    "dimensão": "70,1 x 72,5 x 184 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 3976.0
 },
 {
     "modelo":"CRE44BK",
@@ -138,9 +138,9 @@
     "cor":"prata",
     "eficiência": 53.0,
     "peso": 70.0,
-    "dimensão": "",
+    "dimensão": "71,3 x 62,1 x 184,7 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 3947.0
 },
 {
     "modelo":"CRB39",
@@ -149,9 +149,9 @@
     "cor":"branca",
     "eficiência": 36.6,
     "peso": 53.0,
-    "dimensão": "",
+    "dimensão": "68 x 62 x 172 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 2099.0
 },
 {
     "modelo":"CRM44AK",
@@ -160,9 +160,9 @@
     "cor":"branca",
     "eficiência": 56.3,
     "peso": 60.0,
-    "dimensão": "",
+    "dimensão": "72,4 x 62,1 x 183,4 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 2871.0
 },
 {
     "modelo":"CRM39AK",
@@ -171,9 +171,9 @@
     "cor":"prata",
     "eficiência": 49.1,
     "peso": 58.5,
-    "dimensão": "",
+    "dimensão": "71,4 x 62,1 x 169,5 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 2671.0
 },
 {
     "modelo":"CRM56FK",
@@ -182,9 +182,9 @@
     "cor":"prata",
     "eficiência": 56.9,
     "peso": 76.0,
-    "dimensão": "",
+    "dimensão": "71,9 x 69,5 x 186,3 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 3588.0
 },
 {
     "modelo":"CRM44AB",
@@ -193,9 +193,9 @@
     "cor":"branca",
     "eficiência": 56.2,
     "peso": 60.0,
-    "dimensão": "",
+    "dimensão": "72,4 x 62,1 x 183,4 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 2526.0
 },
 {
     "modelo":"CRE44BB",
@@ -204,9 +204,9 @@
     "cor":"branca",
     "eficiência": 53.0,
     "peso": 69.7,
-    "dimensão": "",
+    "dimensão": "71,3 x 62,1 x 184,7 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 2526.0
 },  
 {
     "modelo":"CRB39AK",
@@ -215,9 +215,9 @@
     "cor":"prata",
     "eficiência": 36.6,
     "peso": 53.0,
-    "dimensão": "",
+    "dimensão": "69,1 x 61,6 x 170 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 2330.0
 }, 
 {
     "modelo":"CRM56FB",
@@ -226,9 +226,9 @@
     "cor":"branca",
     "eficiência": 56.2,
     "peso": 76.0,
-    "dimensão": "",
+    "dimensão": "71,9 x 69,5 x 186,3 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 3229.0
 }, 
 {
     "modelo":"CRB39AB",
@@ -237,7 +237,7 @@
     "cor":"branca",
     "eficiência": 36.6,
     "peso": 53.0,
-    "dimensão": "",
+    "dimensão": "69,1 x 61,6 x 170 cm",
     "frostFree": true,
     "preço": 0.00
 }, 
@@ -248,9 +248,9 @@
     "cor":"branca",
     "eficiência": 49.1,
     "peso": 85.0,
-    "dimensão": "",
+    "dimensão": "71,4 x 62,1 x 169,5 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 2073.0
 }, 
 {
     "modelo":"CRB36AB",
@@ -259,9 +259,9 @@
     "cor":"branca",
     "eficiência": 35.5,
     "peso": 48.0,
-    "dimensão": "",
+    "dimensão": "69,1 x 61,6 x 153 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 2469.0
 }, 
 {
     "modelo":"CRD37EB",
@@ -270,9 +270,9 @@
     "cor":"branca",
     "eficiência": 43.5,
     "peso": 47.0,
-    "dimensão": "",
+    "dimensão": "63,4 x 60,3 x 166,9 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 2159.0
 }, 
 {
     "modelo":"IB45S",
@@ -281,9 +281,9 @@
     "cor":"prata",
     "eficiência": 36.3,
     "peso": 65.5,
-    "dimensão": "",
+    "dimensão": "74,75 x 60 x 186,6 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 4149.0
 }, 
 {
     "modelo":"DB44S",
@@ -292,9 +292,9 @@
     "cor":"prata",
     "eficiência": 48.4,
     "peso": 68.0,
-    "dimensão": "",
+    "dimensão": "74,75 x 60 x 186,6 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 4159.0
 }, 
 {
     "modelo":"IM8S",
@@ -303,9 +303,9 @@
     "cor":"prata",
     "eficiência": 55.4,
     "peso": 98.0,
-    "dimensão": "",
+    "dimensão": "83,5 x 74,2 x 190 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 6999.0
 }, 
 {
     "modelo":"TF39S",
@@ -314,9 +314,9 @@
     "cor":"prata",
     "eficiência": 43.6,
     "peso": 54.0,
-    "dimensão": "",
+    "dimensão": "61 x 60 x 172 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 2599.0
 }, 
 {
     "modelo":"DFX41",
@@ -325,9 +325,9 @@
     "cor":"prata / branca",
     "eficiência": 54.0,
     "peso": 59.0,
-    "dimensão": "",
+    "dimensão": "68,8 x 60 x 178,7 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 2699.0
 }, 
 {
     "modelo":"DW44S",
@@ -336,9 +336,9 @@
     "cor":"prata",
     "eficiência": 56.3,
     "peso": 65.5,
-    "dimensão": "",
+    "dimensão": "75,2 x 60,1 x 186,2 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 3299.0
 }, 
 {
     "modelo":"TF56S",
@@ -347,9 +347,9 @@
     "cor":"prata",
     "eficiência": 54.0,
     "peso": 75.0,
-    "dimensão": "",
+    "dimensão": "77 x 73,5 x 192 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 4399.0
 }, 
 {
     "modelo":"DC35A",
@@ -358,9 +358,9 @@
     "cor":"branca",
     "eficiência": 38.4,
     "peso": 45.5,
-    "dimensão": "",
-    "frostFree": true,
-    "preço": 0.00
+    "dimensão": "61,3 x 54,8 x 161,9 cm",
+    "frostFree": false,
+    "preço": 2099.0
 }, 
 {
     "modelo":"DFN41",
@@ -369,9 +369,9 @@
     "cor":"branca",
     "eficiência": 54.3,
     "peso": 59.0,
-    "dimensão": "",
+    "dimensão": "72 x 62 x 180 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 2599.0
 }, 
 {
     "modelo":"RE31",
@@ -380,9 +380,9 @@
     "cor":"branca",
     "eficiência": 23.7,
     "peso": 40.0,
-    "dimensão": "",
-    "frostFree": true,
-    "preço": 0.00
+    "dimensão": "75 x 57 x 143 cm",
+    "frostFree": false,
+    "preço": 1889.00
 }, 
 {
     "modelo":"TF39",
@@ -391,9 +391,9 @@
     "cor":"branca",
     "eficiência": 43.6,
     "peso": 52.0,
-    "dimensão": "",
+    "dimensão": "60 x 61,8 x 171,5 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 2599.00
 }, 
 {
     "modelo":"TF42S",
@@ -402,9 +402,9 @@
     "cor":"prata",
     "eficiência": 53.0,
     "peso": 59.3,
-    "dimensão": "",
+    "dimensão": "76 x 60 x 178,5 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 2999.0
 }, 
 {
     "modelo":"IB55",
@@ -413,9 +413,9 @@
     "cor":"branca",
     "eficiência": 45.4,
     "peso": 77.5,
-    "dimensão": "",
+    "dimensão": "69,9 x 74,8 x 189,5 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 4249.0
 }, 
 {
     "modelo":"DF44S",
@@ -424,9 +424,9 @@
     "cor":"prata",
     "eficiência": 56.3,
     "peso": 64.0,
-    "dimensão": "",
+    "dimensão": "76 x 60 x 186,3 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 3449.0
 }, 
 {
     "modelo":"if45",
@@ -435,9 +435,9 @@
     "cor":"branca",
     "eficiência": 42.4,
     "peso": 58.0,
-    "dimensão": "",
+    "dimensão": "71,7 x 60 x 184,7 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 3349.0
 }, 
 {
     "modelo":"NR-BB53GV3B",
@@ -446,8 +446,8 @@
     "cor":"preto",
     "eficiência": 39.9,
     "peso": 80.0,
-    "dimensão": "",
+    "dimensão": "73,7 x 73,8 x 190,9 cm",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 4924.00
 }
 ]
