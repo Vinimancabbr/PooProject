@@ -1,0 +1,24 @@
+[
+{
+    "modelo":"LED15",
+    "marca":"Electrolux",
+    "volume": 375.0,
+    "cor":"prata",
+    "eficiência": 0.0,
+    "peso": 15.0,
+    "preço": 1999.0,
+    "litro": 160,
+    "diferencial": "Nenhum"
+},
+{
+    "modelo":"LED13",
+    "marca":"Electrolux",
+    "volume": 375.0,
+    "cor":"prata",
+    "eficiência": 0.0,
+    "peso": 13,
+    "preço": 1849.0,
+    "litro": 150,
+    "diferencial": "Nenhum"
+}
+]

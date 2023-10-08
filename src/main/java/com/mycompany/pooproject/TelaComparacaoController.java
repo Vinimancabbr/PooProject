@@ -4,9 +4,11 @@
  */
 package com.mycompany.pooproject;
 
+import com.mycompany.pooproject.Classes.AirFrier;
 import com.mycompany.pooproject.Classes.Eletrodomestico;
 import com.mycompany.pooproject.Classes.Geladeira;
 import com.mycompany.pooproject.Classes.Liquidificador;
+import com.mycompany.pooproject.Classes.MaquinaDeLavar;
 import com.mycompany.pooproject.Classes.Microondas;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -140,7 +142,51 @@ public class TelaComparacaoController implements Initializable {
                 telaComparacaoController.adaptableLeft2.setTextFill(Color.BLUE);
                 telaComparacaoController.adaptableRight2.setTextFill(Color.BLUE);
             }
+        } else if (eletroEsquerda instanceof AirFrier && eletroDireita instanceof AirFrier) {
+            telaComparacaoController.adaptableLeft1.setText("Tipo: " + ((AirFrier) eletroEsquerda).getTipo());
+            telaComparacaoController.adaptableRight1.setText("Tipo: " + ((AirFrier) eletroDireita).getTipo());
+            telaComparacaoController.adaptableLeft2.setText("Potência: " + ((AirFrier) eletroEsquerda).getPotência());
+            telaComparacaoController.adaptableRight2.setText("Potência: " + ((AirFrier) eletroDireita).getPotência());
+            
+            if (((AirFrier) eletroEsquerda).getPotência() < ((AirFrier) eletroDireita).getPotência()) {
+                telaComparacaoController.adaptableLeft2.setTextFill(Color.RED);
+                telaComparacaoController.adaptableRight2.setTextFill(Color.GREEN);
+            } else if (((AirFrier) eletroEsquerda).getPotência() > ((AirFrier) eletroDireita).getPotência()) {
+                telaComparacaoController.adaptableLeft2.setTextFill(Color.GREEN);
+                telaComparacaoController.adaptableRight2.setTextFill(Color.RED);
+            } else {
+                telaComparacaoController.adaptableLeft2.setTextFill(Color.BLUE);
+                telaComparacaoController.adaptableRight2.setTextFill(Color.BLUE);
+            }   
+        } else if (eletroEsquerda instanceof MaquinaDeLavar && eletroDireita instanceof MaquinaDeLavar) {
+            telaComparacaoController.adaptableLeft1.setText("Diferencial: " + ((MaquinaDeLavar) eletroEsquerda).getDiferencial());
+            telaComparacaoController.adaptableRight1.setText("Diferencial: " + ((MaquinaDeLavar) eletroDireita).getDiferencial());
+            telaComparacaoController.adaptableLeft2.setText("Litro: " + ((MaquinaDeLavar) eletroEsquerda).getLitro());
+            telaComparacaoController.adaptableRight2.setText("Litro: " + ((MaquinaDeLavar) eletroDireita).getLitro());
+            if (((MaquinaDeLavar) eletroEsquerda).getDiferencial().equalsIgnoreCase("Nenhum")) {
+                telaComparacaoController.adaptableLeft1.setTextFill(Color.RED);
+            } else {
+                telaComparacaoController.adaptableLeft1.setTextFill(Color.GREEN);
+            }
+            
+            if (((MaquinaDeLavar) eletroDireita).getDiferencial().equalsIgnoreCase("Nenhum")) {
+                telaComparacaoController.adaptableRight1.setTextFill(Color.RED);
+            } else {
+                telaComparacaoController.adaptableRight1.setTextFill(Color.GREEN);
+            }
+            
+            if (((MaquinaDeLavar) eletroEsquerda).getLitro() < ((MaquinaDeLavar) eletroDireita).getLitro()) {
+                telaComparacaoController.adaptableLeft2.setTextFill(Color.RED);
+                telaComparacaoController.adaptableLeft2.setTextFill(Color.GREEN);
+            } else if (((MaquinaDeLavar) eletroEsquerda).getLitro() > ((MaquinaDeLavar) eletroDireita).getLitro()) {
+                telaComparacaoController.adaptableLeft2.setTextFill(Color.GREEN);
+                telaComparacaoController.adaptableLeft2.setTextFill(Color.RED);
+            } else {
+                telaComparacaoController.adaptableLeft2.setTextFill(Color.BLUE);
+                telaComparacaoController.adaptableLeft2.setTextFill(Color.BLUE);
+            }
         }
+        
         
         /*--Comparando os valores gerais--*/
         //Volume

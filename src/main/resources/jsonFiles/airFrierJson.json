@@ -1,0 +1,24 @@
+[
+{
+    "modelo":"AF-32-RL",
+    "marca":"Mondial",
+    "volume": 3.5,
+    "cor":"prata",
+    "eficiência": 1.4,
+    "peso": 0.0,
+    "preço": 503.0,
+    "potência": 1500.0,
+    "tipo":"Analógico"
+},
+{
+    "modelo":"AF-30-DI",
+    "marca":"Mondial",
+    "volume": 3.5,
+    "cor":"prata",
+    "eficiência": 1.1,
+    "peso": 0.0,
+    "preço": 652.0,
+    "potência": 1500.0,
+    "tipo":"Digital"
+}
+]
