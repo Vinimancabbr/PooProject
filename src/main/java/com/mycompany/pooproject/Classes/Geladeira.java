@@ -14,10 +14,9 @@ public class Geladeira extends Eletrodomestico {
     private String dimensão;
     private boolean frostFree;
     
-    public Geladeira(String modelo, String marca, String cor, double peso, double volume, double eficiencia, double preço, String dimensão, boolean FrostFree) {
-        super(modelo, marca, cor, peso, volume, eficiencia, preço);
+    public Geladeira(String modelo, String marca, String cor, double peso, double volume, double eficiencia, double preço, String voltagem, String dimensão, boolean FrostFree) {
+        super(modelo, marca, cor, peso, volume, eficiencia, preço, voltagem, dimensão);
         this.type = "Geladeira";
-        this.dimensão = dimensão;
         this.frostFree = FrostFree;
     }  
     public Geladeira(String modelo) {
@@ -30,9 +29,6 @@ public class Geladeira extends Eletrodomestico {
     /*--Métodos get--*/
     public String getType() {
         return type;
-    }
-    public String getDimensão() {
-        return dimensão;
     }
     public boolean getFrostFree() {
         return frostFree;

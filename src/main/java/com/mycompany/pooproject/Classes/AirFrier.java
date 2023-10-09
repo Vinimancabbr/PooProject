@@ -14,8 +14,8 @@ public class AirFrier extends Eletrodomestico {
     private String tipo;
     private double potência;
     
-    public AirFrier(String modelo, String marca, String cor, double peso, double volume, double eficiencia, double preço, String tipo, double potência) {
-        super(modelo, marca, cor, peso, volume, eficiencia, preço);
+    public AirFrier(String modelo, String marca, String cor, double peso, double volume, double eficiencia, double preço, String voltagem, String dimensão, String tipo, double potência) {
+        super(modelo, marca, cor, peso, volume, eficiencia, preço, voltagem, dimensão);
         this.type = "AirFrier";
         this.tipo = tipo;
         this.potência = potência;

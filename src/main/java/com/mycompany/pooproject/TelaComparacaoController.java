@@ -10,21 +10,58 @@ import com.mycompany.pooproject.Classes.Geladeira;
 import com.mycompany.pooproject.Classes.Liquidificador;
 import com.mycompany.pooproject.Classes.MaquinaDeLavar;
 import com.mycompany.pooproject.Classes.Microondas;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 
 public class TelaComparacaoController implements Initializable {
+    /*--Funcionalidade de mudança de cena--*/
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
+    
+    public void switchToScene1(ActionEvent event) throws IOException {
+        URL url = getClass().getResource("scene1.fxml");
+        root = FXMLLoader.load(url);   
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("scene1.css").toExternalForm());
+        stage.setScene(scene);
+        stage.show(); 
+    }
+    
+    public void switchToScene2(ActionEvent event) throws IOException { 
+        URL url = getClass().getResource("scene2.fxml");
+        root = FXMLLoader.load(url); 
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("scene1.css").toExternalForm());
+        stage.setScene(scene);
+        stage.show();
+        }
+    
+    
+    
+    
+    
     /*--ListView Esquerda--*/
     @FXML private Label finalNameLeft;
     @FXML private ImageView leftImage;
     @FXML private Label modeloLeft;
     @FXML private Label marcaLeft;
+    @FXML private Label voltagemLeft;
     @FXML private Label corLeft;
     @FXML private Label volumeLeft;
     @FXML private Label eficiênciaLeft;
@@ -40,6 +77,7 @@ public class TelaComparacaoController implements Initializable {
     @FXML private ImageView rightImage;
     @FXML private Label modeloRight;
     @FXML private Label marcaRight;
+    @FXML private Label voltagemRight;
     @FXML private Label corRight;
     @FXML private Label volumeRight;
     @FXML private Label eficiênciaRight;
@@ -66,6 +104,7 @@ public class TelaComparacaoController implements Initializable {
         /*--Colocando todos os valores--*/
         telaComparacaoController.modeloLeft.setText("Modelo: " + eletroEsquerda.getModelo());
         telaComparacaoController.marcaLeft.setText("Marca: " + eletroEsquerda.getMarca());
+        telaComparacaoController.voltagemLeft.setText("Voltagem: " + eletroEsquerda.getVoltagem());
         telaComparacaoController.corLeft.setText("Cor: " + eletroEsquerda.getCor());
         telaComparacaoController.volumeLeft.setText("Volume: " + Double.toString(eletroEsquerda.getVolume()));
         telaComparacaoController.eficiênciaLeft.setText("Eficiência: " + Double.toString(eletroEsquerda.getEficiência()) + " KWh");
@@ -74,6 +113,7 @@ public class TelaComparacaoController implements Initializable {
         
         telaComparacaoController.modeloRight.setText("Modelo: " + eletroDireita.getModelo());
         telaComparacaoController.marcaRight.setText("Marca: " + eletroDireita.getMarca());
+        telaComparacaoController.voltagemRight.setText("Voltagem: " + eletroDireita.getVoltagem());
         telaComparacaoController.corRight.setText("Cor: " + eletroDireita.getCor());
         telaComparacaoController.volumeRight.setText("Volume: " + Double.toString(eletroDireita.getVolume()));
         telaComparacaoController.eficiênciaRight.setText("Eficiência: " + Double.toString(eletroDireita.getEficiência()) + " KWh");
@@ -233,6 +273,7 @@ public class TelaComparacaoController implements Initializable {
             telaComparacaoController.pesoLeft.setTextFill(Color.BLUE);
             telaComparacaoController.pesoRight.setTextFill(Color.BLUE);
         }
+        
     }
     
     @Override

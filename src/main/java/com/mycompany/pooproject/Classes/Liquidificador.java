@@ -14,8 +14,8 @@ public class Liquidificador extends Eletrodomestico {
     private String diferencial;
     private double potência;
     
-    public Liquidificador(String modelo, String marca, String cor, double peso, double volume, double eficiencia, double preço, String diferencial, double potência) {
-        super(modelo, marca, cor, peso, volume, eficiencia, preço);
+    public Liquidificador(String modelo, String marca, String cor, double peso, double volume, double eficiencia, double preço, String voltagem, String dimensão, String diferencial, double potência) {
+        super(modelo, marca, cor, peso, volume, eficiencia, preço, voltagem, dimensão);
         this.type = "Liquidifcador";
         this.diferencial = diferencial;
         this.potência = potência;

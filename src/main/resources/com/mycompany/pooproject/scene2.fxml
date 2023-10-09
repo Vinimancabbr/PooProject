@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
@@ -11,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="731.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.pooproject.TelaComparacaoController">
+<VBox alignment="CENTER" prefHeight="731.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.pooproject.TelaComparacaoController">
    <children>
       <GridPane alignment="TOP_CENTER" gridLinesVisible="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="1280.0">
         <columnConstraints>
@@ -56,6 +57,14 @@
                                  </font>
                               </Label>
                               <Label fx:id="marcaLeft" text="Marca:">
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="voltagemLeft" layoutX="10.0" layoutY="61.0" text="Voltagem:">
                                  <padding>
                                     <Insets left="100.0" />
                                  </padding>
@@ -190,6 +199,14 @@
                                     <Font size="17.0" />
                                  </font>
                               </Label>
+                              <Label fx:id="voltagemRight" layoutX="10.0" layoutY="61.0" text="Voltagem: ">
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
                               <Label fx:id="corRight" text="Cor:">
                                  <padding>
                                     <Insets left="100.0" />
@@ -271,6 +288,11 @@
                         <Font size="33.0" />
                      </font>
                   </Label>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#switchToScene1" text="Voltar" GridPane.halignment="RIGHT">
+                     <GridPane.margin>
+                        <Insets right="50.0" />
+                     </GridPane.margin>
+                  </Button>
                </children>
             </GridPane>
          </children>
