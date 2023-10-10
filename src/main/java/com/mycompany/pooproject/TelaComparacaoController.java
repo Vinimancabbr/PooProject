@@ -114,8 +114,15 @@ public class TelaComparacaoController implements Initializable {
         telaComparacaoController.marcaLeft.setText("Marca: " + eletroEsquerda.getMarca());
         telaComparacaoController.voltagemLeft.setText("Voltagem: " + eletroEsquerda.getVoltagem() + " V");
         telaComparacaoController.corLeft.setText("Cor: " + eletroEsquerda.getCor());
-        telaComparacaoController.volumeLeft.setText("Volume: " + Double.toString(eletroEsquerda.getVolume()) + "L");
+        telaComparacaoController.volumeLeft.setText("Volume: " + Double.toString(eletroEsquerda.getVolume()) + " L");
+        
+        if (eletroEsquerda instanceof MaquinaDeLavar) {
+            telaComparacaoController.eficiênciaLeft.setText("Eficiência: " + Double.toString(eletroEsquerda.getEficiência()) + " Kw por ciclo");
+            
+        } else {
         telaComparacaoController.eficiênciaLeft.setText("Eficiência: " + Double.toString(eletroEsquerda.getEficiência()) + " KWh");
+        }
+        
         telaComparacaoController.preçoLeft.setText("Preço: " + Double.toString(eletroEsquerda.getPreço()) + " R$");
         telaComparacaoController.pesoLeft.setText("Peso: " + Double.toString(eletroEsquerda.getPeso()) + " Kg");
         telaComparacaoController.dimensaoLeft.setText("Dimensão: " + eletroEsquerda.getDimensão() + " cm");
@@ -124,8 +131,14 @@ public class TelaComparacaoController implements Initializable {
         telaComparacaoController.marcaRight.setText("Marca: " + eletroDireita.getMarca());
         telaComparacaoController.voltagemRight.setText("Voltagem: " + eletroDireita.getVoltagem() + " V");
         telaComparacaoController.corRight.setText("Cor: " + eletroDireita.getCor());
-        telaComparacaoController.volumeRight.setText("Volume: " + Double.toString(eletroDireita.getVolume()));
+        telaComparacaoController.volumeRight.setText("Volume: " + Double.toString(eletroDireita.getVolume()) + " L");
         telaComparacaoController.eficiênciaRight.setText("Eficiência: " + Double.toString(eletroDireita.getEficiência()) + " KWh");
+        if (eletroEsquerda instanceof MaquinaDeLavar) {
+            telaComparacaoController.eficiênciaRight.setText("Eficiência: " + Double.toString(eletroDireita.getEficiência()) + "Kw por ciclo");
+            
+        } else {
+        telaComparacaoController.eficiênciaRight.setText("Eficiência: " + Double.toString(eletroDireita.getEficiência()) + " KWh");
+        }
         telaComparacaoController.preçoRight.setText("Preço: " + Double.toString(eletroDireita.getPreço()) + " R$");
         telaComparacaoController.pesoRight.setText("Peso: " + Double.toString(eletroDireita.getPeso()) + " Kg");
         telaComparacaoController.dimensaoRight.setText("Dimensão: " + eletroDireita.getDimensão() + " cm");
@@ -167,8 +180,8 @@ public class TelaComparacaoController implements Initializable {
         } else if (eletroEsquerda instanceof  Liquidificador && eletroDireita instanceof Liquidificador) {
             telaComparacaoController.adaptableLeft1.setText("Diferencial: " + ((Liquidificador) eletroEsquerda).getDiferencial());
             telaComparacaoController.adaptableRight1.setText("Diferencial: " + ((Liquidificador) eletroDireita).getDiferencial());
-            telaComparacaoController.adaptableLeft2.setText("Potência: " + ((Liquidificador) eletroEsquerda).getPotência());
-            telaComparacaoController.adaptableRight2.setText("Potência: " + ((Liquidificador) eletroDireita).getPotência());
+            telaComparacaoController.adaptableLeft2.setText("Potência: " + ((Liquidificador) eletroEsquerda).getPotência() + " W");
+            telaComparacaoController.adaptableRight2.setText("Potência: " + ((Liquidificador) eletroDireita).getPotência() + " W");
             
             if (((Liquidificador) eletroEsquerda).getDiferencial().equalsIgnoreCase("Nenhum")) {
                 telaComparacaoController.adaptableLeft1.setTextFill(Color.RED);
@@ -211,8 +224,6 @@ public class TelaComparacaoController implements Initializable {
         } else if (eletroEsquerda instanceof MaquinaDeLavar && eletroDireita instanceof MaquinaDeLavar) {
             telaComparacaoController.adaptableLeft1.setText("Diferencial: " + ((MaquinaDeLavar) eletroEsquerda).getDiferencial());
             telaComparacaoController.adaptableRight1.setText("Diferencial: " + ((MaquinaDeLavar) eletroDireita).getDiferencial());
-            telaComparacaoController.adaptableLeft2.setText("Litro: " + ((MaquinaDeLavar) eletroEsquerda).getLitro());
-            telaComparacaoController.adaptableRight2.setText("Litro: " + ((MaquinaDeLavar) eletroDireita).getLitro());
             if (((MaquinaDeLavar) eletroEsquerda).getDiferencial().equalsIgnoreCase("Nenhum")) {
                 telaComparacaoController.adaptableLeft1.setTextFill(Color.RED);
             } else {
@@ -223,17 +234,6 @@ public class TelaComparacaoController implements Initializable {
                 telaComparacaoController.adaptableRight1.setTextFill(Color.RED);
             } else {
                 telaComparacaoController.adaptableRight1.setTextFill(Color.GREEN);
-            }
-            
-            if (((MaquinaDeLavar) eletroEsquerda).getLitro() < ((MaquinaDeLavar) eletroDireita).getLitro()) {
-                telaComparacaoController.adaptableLeft2.setTextFill(Color.RED);
-                telaComparacaoController.adaptableLeft2.setTextFill(Color.GREEN);
-            } else if (((MaquinaDeLavar) eletroEsquerda).getLitro() > ((MaquinaDeLavar) eletroDireita).getLitro()) {
-                telaComparacaoController.adaptableLeft2.setTextFill(Color.GREEN);
-                telaComparacaoController.adaptableLeft2.setTextFill(Color.RED);
-            } else {
-                telaComparacaoController.adaptableLeft2.setTextFill(Color.BLUE);
-                telaComparacaoController.adaptableLeft2.setTextFill(Color.BLUE);
             }
         }
         
@@ -251,10 +251,10 @@ public class TelaComparacaoController implements Initializable {
             telaComparacaoController.volumeRight.setTextFill(Color.BLUE);
         }
         //Eficiência
-        if (eletroEsquerda.getEficiência()> eletroDireita.getEficiência()) {
+        if (eletroEsquerda.getEficiência() < eletroDireita.getEficiência()) {
             telaComparacaoController.eficiênciaLeft.setTextFill(Color.GREEN);
             telaComparacaoController.eficiênciaRight.setTextFill(Color.RED);
-        } else if (eletroEsquerda.getEficiência()< eletroDireita.getEficiência()) {
+        } else if (eletroEsquerda.getEficiência() > eletroDireita.getEficiência()) {
             telaComparacaoController.eficiênciaLeft.setTextFill(Color.RED);
             telaComparacaoController.eficiênciaRight.setTextFill(Color.GREEN);
         } else {

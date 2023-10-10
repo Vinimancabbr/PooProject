@@ -75,7 +75,7 @@ public class TelaInicialController implements Initializable {
             "Electrolux DW44S", "Electrtolux TF56S", "Electrtolux DC35A", "Electrtolux DFN41", "Electrtolux RE31", "Electrtolux TF39",
             "Electrtolux TF42S", "Electrtolux IB55", "Electrtolux DF44S", "Electrtolux if45", "Parasonic NR-BB53GV3B"};
         String[] microondas = {"LG MS3097AR", "Electrolux MT30S", "Electrolux MI41T", "Electrolux MI41S", "Electrolux ME3EP", "Electrolux ME23P", "Electrolux MB37R", 
-            "Electrolux ME41X", "Electrolux MTO30", "Electrolux MS37R", "Electrolux ME36S", "Electrolux ME36B", "Electrolux ME23B", "Philco PMO34IP0", "Philco PMO42EB", 
+            "Electrolux ME41X", "Electrolux MTO30", "Electrolux MS37R", "Electrolux ME36S", "Electrolux ME36B", "Electrolux ME23B", "Philco PMO34IP", "Philco PMO42EB", 
             "Philco PMO37ES", "Philco PME31BM", "Philco PMO28TF", "Philco PMO37BB", "Philco PMR28V", "Philco PMO34BB", "Philco PMO37EB", "Philco PMO34ES", "Philco PMO62IE"};
         String[] liquidificadores = {"Oster OLIQ610", "Oster OLIQ606", "Oster BLSTMG-BR8", "Oster OLIQ605", "Oster OLIQ501", 
             "Oster BLST4655Z", "Oster BLSTPBRG", "Oster BLSTPYG1210RBG17", "Oster BLSTMG-BR8", "Oster BLSTTDT-NBG", "Oster BLSTMG-RR8", 
@@ -87,7 +87,7 @@ public class TelaInicialController implements Initializable {
             "Mondial AF-32-RI", "Philco Jumbo InoxPfr06pi", "Philco Gourmet Pfr13p", "Philco Pfr2200", "Philco Pfr16p Gourmet Black Plus", 
             "Philco Pfr3000pi", "Philco Pfr15v", "Philco PFR2250V", "Philco PFR13P", "Philco PFR06PI", "Philco PFR55PI", "Philco PFR15PG", 
             "Philco PFR2000P", "Oster OFRT950", "Oster OFRT590-127", "Oster OFRT660", "Oster CKSTAFOV3-017", "Polishop RI9270", 
-            "Polishop RI9252", "Polishop RI9201", "Polishop RI9255", "Polishop RI9280", "Polishop RI9217"};
+            "Polishop RI9252", "Polishop RI9201", "Polishop RI9255", "Polishop RI9280"};
         String[] maquinasDeLavar = {"Electrolux LED15", "Electrolux LED13", "Electrolux LAC11", "Electrolux LAC09", "Electrolux LSP11", 
             "Electrolux LFE11", "Electrolux LEI18", "Electrolux LAC12", "Electrolux LEV17", "Electrolux LEJ14", "Electrolux LSW11",
             "Brastemp BWK12B9", "Brastemp BWK14BB", "Brastemp BWK14AB", "Brastemp BWK16AB", "Brastemp BWK12AB", "Brastemp BWR12AB",
