@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="731.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.pooproject.TelaComparacaoController">
+<VBox alignment="CENTER" prefHeight="731.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.pooproject.TelaComparacaoController">
    <children>
       <GridPane alignment="TOP_CENTER" gridLinesVisible="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="1280.0">
         <columnConstraints>
@@ -29,11 +29,11 @@
               </columnConstraints>
               <rowConstraints>
                   <RowConstraints maxHeight="429.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="533.0" minHeight="0.0" prefHeight="271.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="469.0" minHeight="0.0" prefHeight="400.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="533.0" minHeight="0.0" prefHeight="347.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="469.0" minHeight="0.0" prefHeight="344.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <ImageView fx:id="leftImage" fitHeight="138.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <ImageView fx:id="leftImage" fitHeight="310.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>
@@ -112,6 +112,14 @@
                                     <Font size="17.0" />
                                  </font>
                               </Label>
+                              <Label fx:id="dimensaoLeft" layoutX="10.0" layoutY="367.0" text="Dimensão:">
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
                               <Label fx:id="adaptableLeft1" layoutX="10.0" layoutY="265.0">
                                  <padding>
                                     <Insets left="100.0" />
@@ -164,11 +172,11 @@
                </columnConstraints>
                <rowConstraints>
                   <RowConstraints maxHeight="429.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="533.0" minHeight="0.0" prefHeight="271.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="469.0" minHeight="0.0" prefHeight="400.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="533.0" minHeight="0.0" prefHeight="347.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="469.0" minHeight="0.0" prefHeight="344.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <ImageView fx:id="rightImage" fitHeight="138.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <ImageView fx:id="rightImage" fitHeight="310.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>
@@ -240,6 +248,14 @@
                                  </font>
                               </Label>
                               <Label fx:id="pesoRight" layoutX="10.0" layoutY="265.0" text="Peso:">
+                                 <padding>
+                                    <Insets left="100.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="dimensaoRight" layoutX="10.0" layoutY="367.0" text="Dimensão:">
                                  <padding>
                                     <Insets left="100.0" />
                                  </padding>

@@ -15,8 +15,8 @@ public class MaquinaDeLavar extends Eletrodomestico {
     private double kilo;
     private double litro;
             
-    public MaquinaDeLavar(String modelo, String marca, String cor, double peso, double volume, double eficiencia, double preço, String voltagem, String diferencial) {
-        super(modelo, marca, cor, peso, volume, eficiencia, preço, voltagem);
+    public MaquinaDeLavar(String modelo, String marca, String cor, double peso, double volume, double eficiencia, double preço, String voltagem, String dimensão, String diferencial) {
+        super(modelo, marca, cor, peso, volume, eficiencia, preço, voltagem, dimensão);
         this.type = "MaquinaDeLavar";
         this.diferencial = diferencial;
     }  

@@ -67,6 +67,7 @@ public class TelaComparacaoController implements Initializable {
     @FXML private Label eficiênciaLeft;
     @FXML private Label preçoLeft;
     @FXML private Label pesoLeft;
+    @FXML private Label dimensaoLeft;
     @FXML private Label adaptableLeft1;
     @FXML private Label adaptableLeft2;
     @FXML private Label adaptableLeft3;
@@ -83,6 +84,7 @@ public class TelaComparacaoController implements Initializable {
     @FXML private Label eficiênciaRight;
     @FXML private Label preçoRight;
     @FXML private Label pesoRight;
+    @FXML private Label dimensaoRight;
     @FXML private Label adaptableRight1;
     @FXML private Label adaptableRight2;
     @FXML private Label adaptableRight3;
@@ -92,8 +94,14 @@ public class TelaComparacaoController implements Initializable {
 
     static public void comparar(Eletrodomestico eletroEsquerda, Eletrodomestico eletroDireita, String type) {
         
-        /*Image imagemIcone = new Image("/Imagens/" + eletroEsquerda.getImageName() + ".jpg");
-        telaComparacaoController.leftImage.setImage(imagemIcone);*/
+        Image imagemIconeEsquerda = new Image("/Imagens/" + eletroEsquerda.getImageName() + ".jpg");
+        Image imagemIconeDireita = new Image("/Imagens/" + eletroDireita.getImageName() + ".jpg");
+        
+        telaComparacaoController.leftImage.setImage(imagemIconeEsquerda);
+        telaComparacaoController.rightImage.setImage(imagemIconeDireita);
+        
+        telaComparacaoController.leftImage.setPreserveRatio(true);
+        telaComparacaoController.rightImage.setPreserveRatio(true);
         
         telaComparacaoController.finalNameLeft.setText(eletroEsquerda.getFinalName());
         telaComparacaoController.finalNameRight.setText(eletroDireita.getFinalName());
@@ -104,21 +112,23 @@ public class TelaComparacaoController implements Initializable {
         /*--Colocando todos os valores--*/
         telaComparacaoController.modeloLeft.setText("Modelo: " + eletroEsquerda.getModelo());
         telaComparacaoController.marcaLeft.setText("Marca: " + eletroEsquerda.getMarca());
-        telaComparacaoController.voltagemLeft.setText("Voltagem: " + eletroEsquerda.getVoltagem());
+        telaComparacaoController.voltagemLeft.setText("Voltagem: " + eletroEsquerda.getVoltagem() + " V");
         telaComparacaoController.corLeft.setText("Cor: " + eletroEsquerda.getCor());
-        telaComparacaoController.volumeLeft.setText("Volume: " + Double.toString(eletroEsquerda.getVolume()));
+        telaComparacaoController.volumeLeft.setText("Volume: " + Double.toString(eletroEsquerda.getVolume()) + "L");
         telaComparacaoController.eficiênciaLeft.setText("Eficiência: " + Double.toString(eletroEsquerda.getEficiência()) + " KWh");
         telaComparacaoController.preçoLeft.setText("Preço: " + Double.toString(eletroEsquerda.getPreço()) + " R$");
         telaComparacaoController.pesoLeft.setText("Peso: " + Double.toString(eletroEsquerda.getPeso()) + " Kg");
+        telaComparacaoController.dimensaoLeft.setText("Dimensão: " + eletroEsquerda.getDimensão() + " cm");
         
         telaComparacaoController.modeloRight.setText("Modelo: " + eletroDireita.getModelo());
         telaComparacaoController.marcaRight.setText("Marca: " + eletroDireita.getMarca());
-        telaComparacaoController.voltagemRight.setText("Voltagem: " + eletroDireita.getVoltagem());
+        telaComparacaoController.voltagemRight.setText("Voltagem: " + eletroDireita.getVoltagem() + " V");
         telaComparacaoController.corRight.setText("Cor: " + eletroDireita.getCor());
         telaComparacaoController.volumeRight.setText("Volume: " + Double.toString(eletroDireita.getVolume()));
         telaComparacaoController.eficiênciaRight.setText("Eficiência: " + Double.toString(eletroDireita.getEficiência()) + " KWh");
         telaComparacaoController.preçoRight.setText("Preço: " + Double.toString(eletroDireita.getPreço()) + " R$");
         telaComparacaoController.pesoRight.setText("Peso: " + Double.toString(eletroDireita.getPeso()) + " Kg");
+        telaComparacaoController.dimensaoRight.setText("Dimensão: " + eletroDireita.getDimensão() + " cm");
         
         /*--Colocando valores específicos de classe e Comparando Valores Específicos--*/
         if (eletroEsquerda instanceof Geladeira && eletroDireita instanceof Geladeira) {

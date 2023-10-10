@@ -3,11 +3,13 @@
     "modelo":"MS3097AR",
     "marca":"LG",
     "volume": 30.0,
-    "cor":"prata",
+    "cor":"preto",
     "eficiência": 54.5,
     "peso": 0.0,
     "diferencial": "EasyClean",
-    "preço": 806.55
+    "preço": 806.55,
+    "voltagem": "110/220",
+    "dimensão": "26.25 x 45.8 x 34.8" 
 },
 {
     "modelo":"MT30S",
@@ -15,19 +17,23 @@
     "volume": 30.0,
     "cor":"prata",
     "eficiência": 54.5,
-    "peso": 0.0,
+    "peso": 9.83,
     "diferencial": "Espelhado com função tira odor",
-    "preço": 629.0
+    "preço": 629.0,
+    "voltagem": "220",
+    "dimensão": "32.5 x 52 x 42.2" 
 },
 {
     "modelo":"MI41T",
     "marca":"Electrolux",
     "volume": 31.0,
-    "cor":"prata",
+    "cor":"branco",
     "eficiência": 54,
-    "peso": 0.0,
+    "peso": 15.2,
     "diferencial": "Painel integrado e display econômico",
-    "preço": 649.0
+    "preço": 649.0,
+    "voltagem": "110/220",
+    "dimensão": "32.5 x 52 x 42.2" 
 },
 {
     "modelo":"MI41S",
@@ -35,39 +41,47 @@
     "volume": 31.0,
     "cor":"prata",
     "eficiência": 54,
-    "peso": 0.0,
+    "peso": 15.2,
     "diferencial": "Espelhado com painel integrado e função tira odor",
-    "preço": 699.0
+    "preço": 699.0,
+    "voltagem": "110/220",
+    "dimensão": "32.5 x 52 x 42.2" 
 },
 {
     "modelo":"ME3EP",
     "marca":"Electrolux",
     "volume": 34.0,
-    "cor":"prata",
+    "cor":"preto",
     "eficiência": 54.7,
-    "peso": 0.0,
+    "peso": 15.3,
     "diferencial": "Painel digital e função tira odor",
-    "preço": 1399.0
+    "preço": 1399.0,
+    "voltagem": "110/220",
+    "dimensão": "37.3 x 59.4 x 40" 
 },
 {
     "modelo":"ME23P",
     "marca":"Electrolux",
     "volume": 23.0,
-    "cor":"prata",
+    "cor":"preto",
     "eficiência": 56.3,
-    "peso": 0.0,
+    "peso": 11.2,
     "diferencial": "Nenhum",
-    "preço": 649.0
+    "preço": 649.0,
+    "voltagem": "110",
+    "dimensão": "20 x 46.1 x 35.2" 
 },
 {
     "modelo":"MB37R",
     "marca":"Electrolux",
     "volume": 27.0,
-    "cor":"prata",
+    "cor":"branco",
     "eficiência": 58.7,
-    "peso": 0.0,
+    "peso": 14.0,
     "diferencial": "Função tira odor",
-    "preço": 679.0
+    "preço": 679.0,
+    "voltagem": "220",
+    "dimensão": "28.1 x 48.3 x 40.7" 
 },
 {
     "modelo":"ME41X",
@@ -75,19 +89,23 @@
     "volume": 31.0,
     "cor":"prata",
     "eficiência": 49.5,
-    "peso": 0.0,
+    "peso": 15.0,
     "diferencial": "Espelhado com função grill e painel blue touch",
-    "preço": 1299.0
+    "preço": 1299.0,
+    "voltagem": "110/220",
+    "dimensão": "32.6 x 52 x 45.1" 
 },
 {
     "modelo":"MTO30",
     "marca":"Electrolux",
     "volume": 20.0,
-    "cor":"prata",
+    "cor":"branco",
     "eficiência": 54.1,
-    "peso": 0.0,
+    "peso": 11.1,
     "diferencial": "Função tira odor e descongelar",
-    "preço": 579.0
+    "preço": 579.0,
+    "voltagem": "110/220",
+    "dimensão": "26.25 x 45.8 x 34.8" 
 },
 {
     "modelo":"MS37R",
@@ -95,9 +113,11 @@
     "volume": 27.0,
     "cor":"prata",
     "eficiência": 58.7,
-    "peso": 0.0,
+    "peso": 14,
     "diferencial": "Espelhado com 55 receitas pré-programadas",
-    "preço": 759.0
+    "preço": 759.0,
+    "voltagem": "220",
+    "dimensão": "28.1 x 48.3 x 40.7" 
 },
 {
     "modelo":"ME36S",
@@ -105,29 +125,35 @@
     "volume": 36.0,
     "cor":"prata",
     "eficiência": 56.8,
-    "peso": 0.0,
+    "peso": 15.2,
     "diferencial": "Nenhum",
-    "preço": 899.0
+    "preço": 899.0,
+    "voltagem": "110/220",
+    "dimensão": "32 x 52 x 41" 
 },
 {
     "modelo":"ME36B",
     "marca":"Electrolux",
     "volume": 36.0,
-    "cor":"prata",
+    "cor":"branco",
     "eficiência": 56.8,
-    "peso": 0.0,
+    "peso": 15.2,
     "diferencial": "Nenhum",
-    "preço": 749.0
+    "preço": 749.0,
+    "voltagem": "110/220",
+    "dimensão": "32 x 52 x 45" 
 },
 {
     "modelo":"ME23B",
     "marca":"Electrolux",
     "volume": 23.0,
-    "cor":"prata",
+    "cor":"branco",
     "eficiência": 56.3,
     "peso": 0.0,
     "diferencial": "Nenhum",
-    "preço": 649.0
+    "preço": 649.0,
+    "voltagem": "220",
+    "dimensão": "31.3 x 49.4 x 45" 
 },
 {
     "modelo":"PMO34IP",
@@ -135,9 +161,11 @@
     "volume": 34.0,
     "cor":"prata",
     "eficiência": 54.6,
-    "peso": 0.0,
+    "peso": 14.8,
     "diferencial": "Limpa fácil",
-    "preço": 679.0
+    "preço": 679.0,
+    "voltagem": "220",
+    "dimensão": "32.5 x 52 x 44.5" 
 },
 {
     "modelo":"PMO42EB",
@@ -145,9 +173,11 @@
     "volume": 42.0,
     "cor":"prata",
     "eficiência": 55.4,
-    "peso": 0.0,
+    "peso": 16.0,
     "diferencial": "Tira odor",
-    "preço": 809.0
+    "preço": 809.0,
+    "voltagem": "110/220",
+    "dimensão": "32.5 x 54 x 44.5" 
 },
 {
     "modelo":"PMO37ES",
@@ -155,9 +185,11 @@
     "volume": 37.0,
     "cor":"prata",
     "eficiência": 54.9,
-    "peso": 0.0,
+    "peso": 15.4,
     "diferencial": "Limpa fácil",
-    "preço": 709.0
+    "preço": 709.0,
+    "voltagem": "110",
+    "dimensão": "36.5 x 56 x 52.5" 
 },
 {
     "modelo":"PME31BM",
@@ -165,9 +197,11 @@
     "volume": 31.0,
     "cor":"prata",
     "eficiência": 52.0,
-    "peso": 0.0,
+    "peso": 15.8,
     "diferencial": "Nenhum",
-    "preço": 1199.0
+    "preço": 1199.0,
+    "voltagem": "110",
+    "dimensão": "40.5 x 59.5 x 43.5 " 
 },
 {
     "modelo":"PMO28TF",
@@ -175,39 +209,47 @@
     "volume": 28.0,
     "cor":"prata",
     "eficiência": 52.5,
-    "peso": 0.0,
+    "peso": 12.4,
     "diferencial": "Sem prato giratório",
-    "preço": 909.0
+    "preço": 909.0,
+    "voltagem": "110/220",
+    "dimensão": "29.5 x 49.2 x 43" 
 },
 {
     "modelo":"PMO37BB",
     "marca":"Philco",
     "volume": 37.0,
-    "cor":"prata",
+    "cor":"branco",
     "eficiência": 54.9,
-    "peso": 0.0,
+    "peso": 14.8,
     "diferencial": "Limpa fácil",
-    "preço": 729.0
+    "preço": 729.0,
+    "voltagem": "110/220",
+    "dimensão": "32.5 x 52 x 44.5" 
 },
 {
     "modelo":"PMR28V",
     "marca":"Philco",
     "volume": 28.0,
-    "cor":"prata",
+    "cor":"vermelho",
     "eficiência": 55.1,
-    "peso": 0.0,
+    "peso": 12.4,
     "diferencial": "Modelo retro",
-    "preço": 679.0
+    "preço": 679.0,
+    "voltagem": "220",
+    "dimensão": "28.1 x 48.3 x 43.4" 
 },
 {
     "modelo":"PMO34BB",
     "marca":"Philco",
     "volume": 34.0,
-    "cor":"prata",
+    "cor":"branco",
     "eficiência": 54.9,
-    "peso": 0.0,
+    "peso": 14.8,
     "diferencial": "Limpa fácil e tira odor",
-    "preço": 759.0
+    "preço": 759.0,
+    "voltagem": "110",
+    "dimensão": "32.5 x 52 x 44.5" 
 },
 {
     "modelo":"PMO37EB",
@@ -215,9 +257,11 @@
     "volume": 37.0,
     "cor":"prata",
     "eficiência": 54.6,
-    "peso": 0.0,
+    "peso": 15.4,
     "diferencial": "Limpa fácil",
-    "preço": 759.0
+    "preço": 759.0,
+    "voltagem": "220",
+    "dimensão": "32.5 x 52 x 44.5" 
 },
 {
     "modelo":"PMO34ES",
@@ -225,9 +269,11 @@
     "volume": 34.0,
     "cor":"prata",
     "eficiência": 56.0,
-    "peso": 0.0,
+    "peso": 14.8,
     "diferencial": "Espelhado",
-    "preço": 829.0
+    "preço": 829.0,
+    "voltagem": "110",
+    "dimensão": "32.5 x 52 x 44.5" 
 },
 {
     "modelo":"PMO62IE",
@@ -237,6 +283,8 @@
     "eficiência": 58.0,
     "peso": 0.0,
     "diferencial": "Espelhado",
-    "preço": 1799.0
+    "preço": 1799.0,
+    "voltagem": "110/220",
+    "dimensão": "35.9 x 62.8 x 50.5" 
 }
 ]

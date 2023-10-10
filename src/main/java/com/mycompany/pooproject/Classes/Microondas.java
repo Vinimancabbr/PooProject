@@ -13,8 +13,8 @@ public class Microondas extends Eletrodomestico {
     private String type;
     private String diferencial;
     
-    public Microondas(String modelo, String marca, String cor, double peso, double volume, double eficiencia, double preço, String voltagem, String diferencial) {
-        super(modelo, marca, cor, peso, volume, eficiencia, preço, voltagem);
+    public Microondas(String modelo, String marca, String cor, double peso, double volume, double eficiencia, double preço, String voltagem, String dimensão, String diferencial) {
+        super(modelo, marca, cor, peso, volume, eficiencia, preço, voltagem, dimensão);
         this.type = "Microondas";
         this.diferencial = diferencial;
     }  
