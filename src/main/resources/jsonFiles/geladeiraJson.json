@@ -6,9 +6,10 @@
     "cor":"prata",
     "eficiência": 54.0,
     "peso": 58.0,
-    "dimensão": "74,7 x 65,2 x 180 cm",
+    "dimensão": "74,7 x 65,2 x 180",
     "frostFree": true,
-    "preço": 3999.0
+    "preço": 3999.0,
+    "voltagem": "110/220"
 },
 {
     "modelo":"BRM44HK",
@@ -17,9 +18,10 @@
     "cor":"prata",
     "eficiência": 54.0,
     "peso": 64.1,
-    "dimensão": "74 x 64 x 180 cm",
+    "dimensão": "74 x 64 x 180",
     "frostFree": true,
-    "preço": 2999.0
+    "preço": 2999.0,
+    "voltagem": "110/220"
 },
 {
     "modelo":"BRE57AK",
@@ -28,9 +30,10 @@
     "cor":"prata",
     "eficiência": 67.0,
     "peso": 85.0,
-    "dimensão": "‎77,5 x 74,5 x 187 cm",
+    "dimensão": "77,5 x 74,5 x 187",
     "frostFree": true,
-    "preço": 4321.0
+    "preço": 4321.0,
+    "voltagem": "110/220"
 },
 {
     "modelo":"Bro85ak",
@@ -39,9 +42,10 @@
     "cor":"prata",
     "eficiência": 56.6,
     "peso": 103.0,
-    "dimensão": "83 x 87W x 192 cm",
+    "dimensão": "83 x 87W x 192",
     "frostFree": true,
-    "preço": 6331.0
+    "preço": 6331.0,
+    "voltagem": "110/220"
 },   
 {
     "modelo":"BRE57AB",
@@ -50,9 +54,10 @@
     "cor":"prata",
     "eficiência": 66.0,
     "peso": 85.0,
-    "dimensão": "77 x 79,4 x 189 cm",
+    "dimensão": "77 x 79,4 x 189",
     "frostFree": true,
-    "preço": 3769.0
+    "preço": 3769.0,
+    "voltagem": "110/220"
 },
 {
     "modelo":"BRE85AK",
@@ -61,9 +66,10 @@
     "cor":"prata",
     "eficiência": 68.0,
     "peso": 99.0,
-    "dimensão": "83,7 x 79,1 x 187,9 cm",
+    "dimensão": "83,7 x 79,1 x 187,9",
     "frostFree": true,
-    "preço": 5034.0
+    "preço": 5034.0,
+    "voltagem": "110/220"
 },
 {
     "modelo":"BRM54JK",
@@ -72,9 +78,10 @@
     "cor":"prata",
     "eficiência": 51.4,
     "peso": 66.0,
-    "dimensão": "75,5 x 62 x 185 cm",
+    "dimensão": "75,5 x 62 x 185",
     "frostFree": true,
-    "preço": 3324.0
+    "preço": 3324.0,
+    "voltagem": "110/220"
 },
 {
     "modelo":"BRM45JB",
@@ -83,9 +90,10 @@
     "cor":"prata",
     "eficiência": 48.8,
     "peso": 58.0,
-    "dimensão": "75,5 x 62 x 176 cm",
+    "dimensão": "75,5 x 62 x 176",
     "frostFree": true,
-    "preço": 3049.0
+    "preço": 3049.0,
+    "voltagem": "110/220"
 },
 {
     "modelo":"BRM45JK",
@@ -94,9 +102,10 @@
     "cor":"prata",
     "eficiência": 48.8,
     "peso": 58.0,
-    "dimensão": "75,5 x 62 x 176 cm",
+    "dimensão": "75,5 x 62 x 176",
     "frostFree": true,
-    "preço": 3099.0
+    "preço": 3099.0,
+    "voltagem": "110/220"
 },
 {
     "modelo":"BRE85AB",
@@ -105,9 +114,10 @@
     "cor":"branca",
     "eficiência": 68.0,
     "peso": 99.0,
-    "dimensão": "83,7 x 79,1 x 187,9 cm",
+    "dimensão": "83,7 x 79,1 x 187,9",
     "frostFree": true,
-    "preço": 4935.00
+    "preço": 4935.00,
+    "voltagem": "110/220"
 },
 {
     "modelo":"BRM44HK",
@@ -116,9 +126,10 @@
     "cor":"prata",
     "eficiência": 54.0,
     "peso": 58.0,
-    "dimensão": "75, x 62,1 x 176 cm",
+    "dimensão": "75, x 62,1 x 176",
     "frostFree": true,
-    "preço": 2944.0
+    "preço": 2944.0,
+    "voltagem": "110/220"
 },
 {
     "modelo":"BRM56BK",
@@ -127,9 +138,10 @@
     "cor":"prata",
     "eficiência": 52.4,
     "peso": 80.0,
-    "dimensão": "70,1 x 72,5 x 184 cm",
+    "dimensão": "70,1 x 72,5 x 184",
     "frostFree": true,
-    "preço": 3976.0
+    "preço": 3976.0,
+    "voltagem": "110/220"
 },
 {
     "modelo":"CRE44BK",
@@ -138,9 +150,10 @@
     "cor":"prata",
     "eficiência": 53.0,
     "peso": 70.0,
-    "dimensão": "71,3 x 62,1 x 184,7 cm",
+    "dimensão": "71,3 x 62,1 x 184,7",
     "frostFree": true,
-    "preço": 3947.0
+    "preço": 3947.0,
+    "voltagem": "110/220"
 },
 {
     "modelo":"CRB39",
@@ -149,9 +162,10 @@
     "cor":"branca",
     "eficiência": 36.6,
     "peso": 53.0,
-    "dimensão": "68 x 62 x 172 cm",
+    "dimensão": "68 x 62 x 172",
     "frostFree": true,
-    "preço": 2099.0
+    "preço": 2099.0,
+    "voltagem": "110/220"
 },
 {
     "modelo":"CRM44AK",
@@ -160,9 +174,10 @@
     "cor":"branca",
     "eficiência": 56.3,
     "peso": 60.0,
-    "dimensão": "72,4 x 62,1 x 183,4 cm",
+    "dimensão": "72,4 x 62,1 x 183,4",
     "frostFree": true,
-    "preço": 2871.0
+    "preço": 2871.0,
+    "voltagem": "110/220"
 },
 {
     "modelo":"CRM39AK",
@@ -171,9 +186,10 @@
     "cor":"prata",
     "eficiência": 49.1,
     "peso": 58.5,
-    "dimensão": "71,4 x 62,1 x 169,5 cm",
+    "dimensão": "71,4 x 62,1 x 169,5",
     "frostFree": true,
-    "preço": 2671.0
+    "preço": 2671.0,
+    "voltagem": "110/220"
 },
 {
     "modelo":"CRM56FK",
@@ -182,9 +198,10 @@
     "cor":"prata",
     "eficiência": 56.9,
     "peso": 76.0,
-    "dimensão": "71,9 x 69,5 x 186,3 cm",
+    "dimensão": "71,9 x 69,5 x 186,3",
     "frostFree": true,
-    "preço": 3588.0
+    "preço": 3588.0,
+    "voltagem": "110/220"
 },
 {
     "modelo":"CRM44AB",
@@ -193,9 +210,10 @@
     "cor":"branca",
     "eficiência": 56.2,
     "peso": 60.0,
-    "dimensão": "72,4 x 62,1 x 183,4 cm",
+    "dimensão": "72,4 x 62,1 x 183,4",
     "frostFree": true,
-    "preço": 2526.0
+    "preço": 2526.0,
+    "voltagem": "110/220"
 },
 {
     "modelo":"CRE44BB",
@@ -204,9 +222,10 @@
     "cor":"branca",
     "eficiência": 53.0,
     "peso": 69.7,
-    "dimensão": "71,3 x 62,1 x 184,7 cm",
+    "dimensão": "71,3 x 62,1 x 184,7",
     "frostFree": true,
-    "preço": 2526.0
+    "preço": 2526.0,
+    "voltagem": "110/220"
 },  
 {
     "modelo":"CRB39AK",
@@ -215,9 +234,10 @@
     "cor":"prata",
     "eficiência": 36.6,
     "peso": 53.0,
-    "dimensão": "69,1 x 61,6 x 170 cm",
+    "dimensão": "69,1 x 61,6 x 170",
     "frostFree": true,
-    "preço": 2330.0
+    "preço": 2330.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"CRM56FB",
@@ -226,9 +246,10 @@
     "cor":"branca",
     "eficiência": 56.2,
     "peso": 76.0,
-    "dimensão": "71,9 x 69,5 x 186,3 cm",
+    "dimensão": "71,9 x 69,5 x 186,3",
     "frostFree": true,
-    "preço": 3229.0
+    "preço": 3229.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"CRB39AB",
@@ -237,9 +258,10 @@
     "cor":"branca",
     "eficiência": 36.6,
     "peso": 53.0,
-    "dimensão": "69,1 x 61,6 x 170 cm",
+    "dimensão": "69,1 x 61,6 x 170",
     "frostFree": true,
-    "preço": 0.00
+    "preço": 0.00,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"CRM39AB",
@@ -248,9 +270,10 @@
     "cor":"branca",
     "eficiência": 49.1,
     "peso": 85.0,
-    "dimensão": "71,4 x 62,1 x 169,5 cm",
+    "dimensão": "71,4 x 62,1 x 169,5",
     "frostFree": true,
-    "preço": 2073.0
+    "preço": 2073.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"CRB36AB",
@@ -259,9 +282,10 @@
     "cor":"branca",
     "eficiência": 35.5,
     "peso": 48.0,
-    "dimensão": "69,1 x 61,6 x 153 cm",
+    "dimensão": "69,1 x 61,6 x 153",
     "frostFree": true,
-    "preço": 2469.0
+    "preço": 2469.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"CRD37EB",
@@ -270,9 +294,10 @@
     "cor":"branca",
     "eficiência": 43.5,
     "peso": 47.0,
-    "dimensão": "63,4 x 60,3 x 166,9 cm",
+    "dimensão": "63,4 x 60,3 x 166,9",
     "frostFree": true,
-    "preço": 2159.0
+    "preço": 2159.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"IB45S",
@@ -281,9 +306,10 @@
     "cor":"prata",
     "eficiência": 36.3,
     "peso": 65.5,
-    "dimensão": "74,75 x 60 x 186,6 cm",
+    "dimensão": "74,75 x 60 x 186,6",
     "frostFree": true,
-    "preço": 4149.0
+    "preço": 4149.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"DB44S",
@@ -292,9 +318,10 @@
     "cor":"prata",
     "eficiência": 48.4,
     "peso": 68.0,
-    "dimensão": "74,75 x 60 x 186,6 cm",
+    "dimensão": "74,75 x 60 x 186,6",
     "frostFree": true,
-    "preço": 4159.0
+    "preço": 4159.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"IM8S",
@@ -303,9 +330,10 @@
     "cor":"prata",
     "eficiência": 55.4,
     "peso": 98.0,
-    "dimensão": "83,5 x 74,2 x 190 cm",
+    "dimensão": "83,5 x 74,2 x 190",
     "frostFree": true,
-    "preço": 6999.0
+    "preço": 6999.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"TF39S",
@@ -314,9 +342,10 @@
     "cor":"prata",
     "eficiência": 43.6,
     "peso": 54.0,
-    "dimensão": "61 x 60 x 172 cm",
+    "dimensão": "61 x 60 x 172",
     "frostFree": true,
-    "preço": 2599.0
+    "preço": 2599.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"DFX41",
@@ -325,9 +354,10 @@
     "cor":"prata / branca",
     "eficiência": 54.0,
     "peso": 59.0,
-    "dimensão": "68,8 x 60 x 178,7 cm",
+    "dimensão": "68,8 x 60 x 178,7",
     "frostFree": true,
-    "preço": 2699.0
+    "preço": 2699.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"DW44S",
@@ -336,9 +366,10 @@
     "cor":"prata",
     "eficiência": 56.3,
     "peso": 65.5,
-    "dimensão": "75,2 x 60,1 x 186,2 cm",
+    "dimensão": "75,2 x 60,1 x 186,2",
     "frostFree": true,
-    "preço": 3299.0
+    "preço": 3299.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"TF56S",
@@ -347,9 +378,10 @@
     "cor":"prata",
     "eficiência": 54.0,
     "peso": 75.0,
-    "dimensão": "77 x 73,5 x 192 cm",
+    "dimensão": "77 x 73,5 x 192",
     "frostFree": true,
-    "preço": 4399.0
+    "preço": 4399.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"DC35A",
@@ -358,9 +390,10 @@
     "cor":"branca",
     "eficiência": 38.4,
     "peso": 45.5,
-    "dimensão": "61,3 x 54,8 x 161,9 cm",
+    "dimensão": "61,3 x 54,8 x 161,9",
     "frostFree": false,
-    "preço": 2099.0
+    "preço": 2099.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"DFN41",
@@ -369,9 +402,10 @@
     "cor":"branca",
     "eficiência": 54.3,
     "peso": 59.0,
-    "dimensão": "72 x 62 x 180 cm",
+    "dimensão": "72 x 62 x 180",
     "frostFree": true,
-    "preço": 2599.0
+    "preço": 2599.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"RE31",
@@ -380,9 +414,10 @@
     "cor":"branca",
     "eficiência": 23.7,
     "peso": 40.0,
-    "dimensão": "75 x 57 x 143 cm",
+    "dimensão": "75 x 57 x 143",
     "frostFree": false,
-    "preço": 1889.00
+    "preço": 1889.00,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"TF39",
@@ -391,9 +426,10 @@
     "cor":"branca",
     "eficiência": 43.6,
     "peso": 52.0,
-    "dimensão": "60 x 61,8 x 171,5 cm",
+    "dimensão": "60 x 61,8 x 171,5",
     "frostFree": true,
-    "preço": 2599.00
+    "preço": 2599.00,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"TF42S",
@@ -402,9 +438,10 @@
     "cor":"prata",
     "eficiência": 53.0,
     "peso": 59.3,
-    "dimensão": "76 x 60 x 178,5 cm",
+    "dimensão": "76 x 60 x 178,5",
     "frostFree": true,
-    "preço": 2999.0
+    "preço": 2999.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"IB55",
@@ -413,9 +450,10 @@
     "cor":"branca",
     "eficiência": 45.4,
     "peso": 77.5,
-    "dimensão": "69,9 x 74,8 x 189,5 cm",
+    "dimensão": "69,9 x 74,8 x 189,5",
     "frostFree": true,
-    "preço": 4249.0
+    "preço": 4249.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"DF44S",
@@ -424,9 +462,10 @@
     "cor":"prata",
     "eficiência": 56.3,
     "peso": 64.0,
-    "dimensão": "76 x 60 x 186,3 cm",
+    "dimensão": "76 x 60 x 186,3",
     "frostFree": true,
-    "preço": 3449.0
+    "preço": 3449.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"if45",
@@ -435,9 +474,10 @@
     "cor":"branca",
     "eficiência": 42.4,
     "peso": 58.0,
-    "dimensão": "71,7 x 60 x 184,7 cm",
+    "dimensão": "71,7 x 60 x 184,7",
     "frostFree": true,
-    "preço": 3349.0
+    "preço": 3349.0,
+    "voltagem": "110/220"
 }, 
 {
     "modelo":"NR-BB53GV3B",
@@ -446,8 +486,9 @@
     "cor":"preto",
     "eficiência": 39.9,
     "peso": 80.0,
-    "dimensão": "73,7 x 73,8 x 190,9 cm",
+    "dimensão": "73,7 x 73,8 x 190,9",
     "frostFree": true,
-    "preço": 4924.00
+    "preço": 4924.00,
+    "voltagem": "110/220"
 }
 ]

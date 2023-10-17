@@ -11,7 +11,6 @@ import java.util.List;
 public class Geladeira extends Eletrodomestico {
     
     private String type;
-    private String dimensão;
     private boolean frostFree;
     
     public Geladeira(String modelo, String marca, String cor, double peso, double volume, double eficiencia, double preço, String voltagem, String dimensão, boolean FrostFree) {

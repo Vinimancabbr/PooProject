@@ -94,14 +94,14 @@ public class TelaComparacaoController implements Initializable {
 
     static public void comparar(Eletrodomestico eletroEsquerda, Eletrodomestico eletroDireita, String type) {
         
-        Image imagemIconeEsquerda = new Image("/Imagens/" + eletroEsquerda.getImageName() + ".jpg");
+        /*Image imagemIconeEsquerda = new Image("/Imagens/" + eletroEsquerda.getImageName() + ".jpg");
         Image imagemIconeDireita = new Image("/Imagens/" + eletroDireita.getImageName() + ".jpg");
         
         telaComparacaoController.leftImage.setImage(imagemIconeEsquerda);
         telaComparacaoController.rightImage.setImage(imagemIconeDireita);
         
         telaComparacaoController.leftImage.setPreserveRatio(true);
-        telaComparacaoController.rightImage.setPreserveRatio(true);
+        telaComparacaoController.rightImage.setPreserveRatio(true);*/
         
         telaComparacaoController.finalNameLeft.setText(eletroEsquerda.getFinalName());
         telaComparacaoController.finalNameRight.setText(eletroDireita.getFinalName());
@@ -145,23 +145,21 @@ public class TelaComparacaoController implements Initializable {
         
         /*--Colocando valores específicos de classe e Comparando Valores Específicos--*/
         if (eletroEsquerda instanceof Geladeira && eletroDireita instanceof Geladeira) {
-            telaComparacaoController.adaptableLeft1.setText("Dimensão: " + ((Geladeira) eletroEsquerda).getDimensão());
             String frostFreeLeft = ((Geladeira) eletroEsquerda).getFrostFree() ? "Sim" : "Não";
-            telaComparacaoController.adaptableLeft2.setText("FrostFree: " + frostFreeLeft);
+            telaComparacaoController.adaptableLeft1.setText("FrostFree: " + frostFreeLeft);
             
-            telaComparacaoController.adaptableRight1.setText("Dimensão: " + ((Geladeira) eletroDireita).getDimensão());
             String frostFreeRight = ((Geladeira) eletroDireita).getFrostFree() ? "Sim" : "Não";
-            telaComparacaoController.adaptableRight2.setText("FrostFree: " + frostFreeRight);
+            telaComparacaoController.adaptableRight1.setText("FrostFree: " + frostFreeRight);
             
             if (((Geladeira) eletroEsquerda).getFrostFree() == ((Geladeira) eletroDireita).getFrostFree()) {
-                telaComparacaoController.adaptableLeft2.setTextFill(Color.BLUE);
-                telaComparacaoController.adaptableRight2.setTextFill(Color.BLUE);
+                telaComparacaoController.adaptableLeft1.setTextFill(Color.BLUE);
+                telaComparacaoController.adaptableRight1.setTextFill(Color.BLUE);
             } else if (((Geladeira) eletroEsquerda).getFrostFree()) {
-                telaComparacaoController.adaptableLeft2.setTextFill(Color.GREEN);
-                telaComparacaoController.adaptableRight2.setTextFill(Color.RED);
+                telaComparacaoController.adaptableLeft1.setTextFill(Color.GREEN);
+                telaComparacaoController.adaptableRight1.setTextFill(Color.RED);
             } else {
-                telaComparacaoController.adaptableLeft2.setTextFill(Color.RED);
-                telaComparacaoController.adaptableRight2.setTextFill(Color.GREEN);
+                telaComparacaoController.adaptableLeft1.setTextFill(Color.RED);
+                telaComparacaoController.adaptableRight1.setTextFill(Color.GREEN);
             }
         } else if (eletroEsquerda instanceof  Microondas && eletroDireita instanceof Microondas) {
             telaComparacaoController.adaptableLeft1.setText("Diferencial: " + ((Microondas) eletroEsquerda).getDiferencial());
