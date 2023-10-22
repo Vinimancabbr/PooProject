@@ -71,9 +71,9 @@ public class TelaInicialController implements Initializable {
             "Brastemp BRE85AK", "Brastemp BRM54JK", "Brastemp BRM45JB", "Brastemp BRM45JK", "Brastemp BRE85AB", "Brastemp BRM44HK", 
             "Brastemp BRM56BK", "Consul CRE44BK", "Consul CRB39", "Consul CRM44AK", "Consul CRM39AK", "Consul CRM56FK",
             "Consul CRM44AB", "Consul CRE44BB", "Consul CRB39AK", "Consul CRM56FB", "Consul CRB39AB", "Consul CRM39AB", "Consul CRB36AB", 
-            "Consul CRD37EB", "Electrtolux IB45S", "Electrtolux DB44S", "Electrtolux IM8S", "Electrtolux TF39S", "Electrtolux DFX41", 
-            "Electrolux DW44S", "Electrtolux TF56S", "Electrtolux DC35A", "Electrtolux DFN41", "Electrtolux RE31", "Electrtolux TF39",
-            "Electrtolux TF42S", "Electrtolux IB55", "Electrtolux DF44S", "Electrtolux if45", "Parasonic NR-BB53GV3B"};
+            "Consul CRD37EB", "Electrolux IB45S", "Electrolux DB44S", "Electrolux IM8S", "Electrolux TF39S", "Electrolux DFX41", 
+            "Electrolux DW44S", "Electrolux TF56S", "Electrolux DC35A", "Electrolux DFN41", "Electrolux RE31", "Electrolux TF39",
+            "Electrolux TF42S", "Electrolux IB55", "Electrolux DF44S", "Electrolux if45", "Parasonic NR-BB53GV3B"};
         String[] microondas = {"LG MS3097AR", "Electrolux MT30S", "Electrolux MI41T", "Electrolux MI41S", "Electrolux ME3EP", "Electrolux ME23P", "Electrolux MB37R", 
             "Electrolux ME41X", "Electrolux MTO30", "Electrolux MS37R", "Electrolux ME36S", "Electrolux ME36B", "Electrolux ME23B", "Philco PMO34IP", "Philco PMO42EB", 
             "Philco PMO37ES", "Philco PME31BM", "Philco PMO28TF", "Philco PMO37BB", "Philco PMR28V", "Philco PMO34BB", "Philco PMO37EB", "Philco PMO34ES", "Philco PMO62IE"};

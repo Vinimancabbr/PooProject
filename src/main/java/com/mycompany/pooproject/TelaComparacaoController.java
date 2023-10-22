@@ -93,15 +93,26 @@ public class TelaComparacaoController implements Initializable {
     private static TelaComparacaoController telaComparacaoController;
 
     static public void comparar(Eletrodomestico eletroEsquerda, Eletrodomestico eletroDireita, String type) {
+        Image imagemIconeEsquerda = null;
+        Image imagemIconeDireita = null;
+
+        try {
+            imagemIconeEsquerda = new Image("/Imagens/" + eletroEsquerda.getImageName() + ".jpg");
+        } catch (IllegalArgumentException x) {
+            imagemIconeEsquerda = new Image("/Imagens/error-icon-25266.png");
+        }
+        try {
+            imagemIconeDireita = new Image("/Imagens/" + eletroDireita.getImageName() + ".jpg");
+        } catch (IllegalArgumentException x) {
+            imagemIconeDireita = new Image("/Imagens/error-icon-25266.png");
+        }
         
-        /*Image imagemIconeEsquerda = new Image("/Imagens/" + eletroEsquerda.getImageName() + ".jpg");
-        Image imagemIconeDireita = new Image("/Imagens/" + eletroDireita.getImageName() + ".jpg");
         
         telaComparacaoController.leftImage.setImage(imagemIconeEsquerda);
         telaComparacaoController.rightImage.setImage(imagemIconeDireita);
         
         telaComparacaoController.leftImage.setPreserveRatio(true);
-        telaComparacaoController.rightImage.setPreserveRatio(true);*/
+        telaComparacaoController.rightImage.setPreserveRatio(true);
         
         telaComparacaoController.finalNameLeft.setText(eletroEsquerda.getFinalName());
         telaComparacaoController.finalNameRight.setText(eletroDireita.getFinalName());
@@ -206,22 +217,39 @@ public class TelaComparacaoController implements Initializable {
         } else if (eletroEsquerda instanceof AirFrier && eletroDireita instanceof AirFrier) {
             telaComparacaoController.adaptableLeft1.setText("Tipo: " + ((AirFrier) eletroEsquerda).getTipo());
             telaComparacaoController.adaptableRight1.setText("Tipo: " + ((AirFrier) eletroDireita).getTipo());
-            telaComparacaoController.adaptableLeft2.setText("Potência: " + ((AirFrier) eletroEsquerda).getPotência());
-            telaComparacaoController.adaptableRight2.setText("Potência: " + ((AirFrier) eletroDireita).getPotência());
+            telaComparacaoController.adaptableLeft2.setText("Potência: " + ((AirFrier) eletroEsquerda).getPotencia());
+            telaComparacaoController.adaptableRight2.setText("Potência: " + ((AirFrier) eletroDireita).getPotencia());
+            telaComparacaoController.adaptableLeft3.setText("Diferencial: " + ((AirFrier) eletroEsquerda).getDiferencial());
+            telaComparacaoController.adaptableRight3.setText("Diferencial: " + ((AirFrier) eletroDireita).getDiferencial());
             
-            if (((AirFrier) eletroEsquerda).getPotência() < ((AirFrier) eletroDireita).getPotência()) {
+            if (((AirFrier) eletroEsquerda).getPotencia() < ((AirFrier) eletroDireita).getPotencia()) {
                 telaComparacaoController.adaptableLeft2.setTextFill(Color.RED);
                 telaComparacaoController.adaptableRight2.setTextFill(Color.GREEN);
-            } else if (((AirFrier) eletroEsquerda).getPotência() > ((AirFrier) eletroDireita).getPotência()) {
+            } else if (((AirFrier) eletroEsquerda).getPotencia() > ((AirFrier) eletroDireita).getPotencia()) {
                 telaComparacaoController.adaptableLeft2.setTextFill(Color.GREEN);
                 telaComparacaoController.adaptableRight2.setTextFill(Color.RED);
             } else {
                 telaComparacaoController.adaptableLeft2.setTextFill(Color.BLUE);
                 telaComparacaoController.adaptableRight2.setTextFill(Color.BLUE);
             }   
+            if (((AirFrier) eletroEsquerda).getDiferencial().equalsIgnoreCase("Nenhum")) {
+                telaComparacaoController.adaptableLeft3.setTextFill(Color.RED);
+            } else {
+                telaComparacaoController.adaptableLeft3.setTextFill(Color.GREEN);
+            }
+            if (((AirFrier) eletroDireita).getDiferencial().equalsIgnoreCase("Nenhum")) {
+                telaComparacaoController.adaptableRight3.setTextFill(Color.RED);
+            } else {
+                telaComparacaoController.adaptableRight3.setTextFill(Color.GREEN);
+            }
+            
+            
+            
         } else if (eletroEsquerda instanceof MaquinaDeLavar && eletroDireita instanceof MaquinaDeLavar) {
             telaComparacaoController.adaptableLeft1.setText("Diferencial: " + ((MaquinaDeLavar) eletroEsquerda).getDiferencial());
             telaComparacaoController.adaptableRight1.setText("Diferencial: " + ((MaquinaDeLavar) eletroDireita).getDiferencial());
+            telaComparacaoController.adaptableLeft2.setText("Capacidade de roupas: " + ((MaquinaDeLavar) eletroEsquerda).getKilo() + " Kg");
+            telaComparacaoController.adaptableRight2.setText("Capacidade de roupas: " + ((MaquinaDeLavar) eletroDireita).getKilo() + " Kg");
             if (((MaquinaDeLavar) eletroEsquerda).getDiferencial().equalsIgnoreCase("Nenhum")) {
                 telaComparacaoController.adaptableLeft1.setTextFill(Color.RED);
             } else {
@@ -232,6 +260,16 @@ public class TelaComparacaoController implements Initializable {
                 telaComparacaoController.adaptableRight1.setTextFill(Color.RED);
             } else {
                 telaComparacaoController.adaptableRight1.setTextFill(Color.GREEN);
+            }
+            if (((MaquinaDeLavar) eletroEsquerda).getKilo() < ((MaquinaDeLavar) eletroDireita).getKilo()) {
+                telaComparacaoController.adaptableLeft2.setTextFill(Color.RED);
+                telaComparacaoController.adaptableRight2.setTextFill(Color.GREEN);
+            } else if (((MaquinaDeLavar) eletroEsquerda).getKilo() > ((MaquinaDeLavar) eletroDireita).getKilo()){
+                telaComparacaoController.adaptableLeft2.setTextFill(Color.GREEN);
+                telaComparacaoController.adaptableRight2.setTextFill(Color.RED);
+            } else {
+                telaComparacaoController.adaptableLeft2.setTextFill(Color.BLUE);
+                telaComparacaoController.adaptableRight2.setTextFill(Color.BLUE);
             }
         }
         
